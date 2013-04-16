@@ -1,0 +1,26 @@
+// Panda is the default animal in "_animal_default.sass"
+// which is why this partial is so empty, everntually we'll move it over here
+
+//PANDA HAT
+// ================
+.hat.panda-hat 
+	+rotate(-5deg)
+
+//PANDA TORSO
+// ================
+.torso.animal-torso.panda
+	@extend %animal-torso-black
+
+// FULL PANDA 
+// ================
+.animal-head-bg.panda
+	background-color: $panda-bg-color	
+
+// move down facial features on full animals
+.animal-head 
+	.animal-eye-socket.panda
+		top: 40%
+	.animal-nose.panda 
+		top: 60%
+	.animal-mouth.panda
+		top: 67%

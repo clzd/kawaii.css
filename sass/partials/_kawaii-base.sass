@@ -1,0 +1,90 @@
+//kawaii base
+//=============================
+// this is the default width/height of heads. The rule is that kawaii shold be about 1.5-2 heads tall
+$diameter: 300px !default
+
+// width variable for +bx(width, height, radius)
+$box-width: 100% !default
+
+// height variable for +bx(width, height, radius)
+$box-height: 100% !default
+
+// radius variable for +bx(width, height, radius)
+$border_radness: 50% !default
+
+// this element is +20px bigger than the head so it looks like it wraps around head
+$hat_diameter: $diameter + 20px !default
+
+// this has to be creates the subtle curve of the hat brim
+$animal-brim: 500px !default
+
+// default hair color
+$hair-color: #ff0000 !default
+
+// TODO: Remove? I think this is color fo the cat eyes
+$yellow: yellow !default
+
+// TODO: Remove? I this is color for pig
+$pink: pink !default
+
+// TODO: Remove? I this is color for cat
+$ltblue: rgb(143, 193, 248) !default
+
+// default color for human lips
+$lip-color: $pink !default
+
+// default color for humans
+$skin-color: #ffdfc4 !default
+
+// TODO: Remove? default color for animals
+$animal-bg-color: $ltblue !default
+
+// TODO: Remove? default border color for animals
+$animal-border-color: black !default
+
+// TODO: Remove? blk color for top of sock
+$sock-stripe-top: rgb(0, 0, 0) !default
+
+// TODO: Remove? wht color of sock
+$sock-stripe-middle: white !default
+
+// TODO: Remove? blue color of sock
+$sock-stripe-bottom: $ltblue !default
+
+// shoe colors
+$shoe-color:  rgb(0, 0, 0) !default
+
+//animal colors
+//===========================
+//bunny colors
+$bunny-bg-color: white !default
+//cat colors
+$cat-bg-color: rgb(143, 193, 248) !default
+//pig colors
+$pig-bg-color: pink !default
+//panda colors
+$panda-bg-color: white !default
+
+//	@function test_color($color: white)
+//		@return desaturate(darken($color, 50%), 75%)
+
+// TODO: 
+// functions for skin colors
+// breathing animations
+// blinking animations
+// head tilt and hair slid animation
+// slight arm movement animations
+
+// boxes for structure, I'm sure compass has somethign but I didnt have time to look
+=bx($color: $skin-color, $width: $box-width, $height: $box-height, $border-radius: $border_radness)
+	background-color: $color
+	width: $width
+	height: $height
+	+border-radius($border-radius)
+
+// another thingy for positioning
+=ps($postion: absolute, $x-pos: 0, $y-pos: 0)	
+	position: $postion
+	left: $x-pos
+	top: $y-pos
+

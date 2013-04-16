@@ -1,0 +1,121 @@
+//EYE STYLES
+//=========================================
+
+//LONG EYELASHES 
+//=============
+.eye.eye-lashes
+	+ps(absolute, 20%, 70%)
+	+bx(rgb(0, 0, 0), 30px, 30px)
+	&:after
+		+ps(absolute, -10px, 0px)
+		+bx(rgb(0, 0, 0), 40px, 15px)
+		+border-radius(50% 50px)
+		z-index: -3
+
+.eye.eye-lashes.right
+	+ps(absolute, 70%, 70%)
+	&:after
+		+ps(absolute, 0px, 0px)
+		+border-radius(50px 50%)
+
+//AMUSED EYES
+//=============
+.eye.amused
+	height: 20px
+	background-color: transparent
+	+box-shadow(inset -2px 5px 0px 0px #000)
+	&:before,
+	&:after
+		display: none
+
+.eye.amused.right
+	+box-shadow(inset 2px 5px 0px 0px #000)
+
+// AMUSED CHEEKS
+//=============
+.cheeks.amused
+	left: 54px
+	top: 220px
+
+.cheeks.amused.right
+	left: 205px
+
+//PLAYFUL EYES
+//=============
+.eye.playful 
+	//position: relative
+	z-index: -5
+	&:before
+		content: ''
+		display: block
+		+bx($skin-color, 80px, 20px)
+		+ps(absolute, -20px, 15px)
+	&:after
+		content: ''
+		display: block
+		+bx(#fff, 4px, 4px)
+		+ps(absolute, 7px, 6px)
+		
+//SAD EYES
+//=============
+.eye.sad
+	height: 25px
+	+rotate(-15deg)
+	&:before,
+	&:after
+		display: none
+
+.eye.sad.right
+	+rotate(15deg)
+
+.eye.sad.tear
+	&:after	
+		content: ''
+		display: block
+		+bx(rgb(105, 219, 255), 12px, 12px, 0 50% 50%)
+		+ps(absolute, 5px, 30px)
+		+rotate(35deg)
+		+box-shadow(inset 0 0 0 2px rgba(1, 67, 85, .25))
+
+//DISPLEASED EYES
+//=============
+.eye.displeased
+	width: 20px
+	height: 20px
+	&:before
+		content: ''
+		display: block
+		+bx($skin-color,60px, 20px, 20px)
+		+ps(absolute, -20px, -10px)
+		+box-shadow(inset -5px -4px 0px 0px #000)
+		+rotate(15deg)
+	&:after
+		width: 5px
+		height: 5px	
+
+.eye.displeased.right
+	left: 210px
+	&:before
+		+box-shadow(inset 5px -4px 0px 0px #000)
+		//left: -20px
+		+rotate(-15deg)
+
+//SLEEPY EYES
+//=============
+.eye.sleepy
+	+bx(#000, 55px, 2px, 10px)
+	left: 30px
+	+rotate(5deg)
+	&:before,
+	&:after
+		display: none
+
+.eye.sleepy.right
+	left: 205px
+	+rotate(-5deg)
+
+
+
+
+
+

@@ -1,0 +1,120 @@
+//PIGGY
+//======================
+.animal-ear.pig
+	background-color: lighten($pig-bg-color, 5%)
+	+border-radius(50% 50% 50% 5px)
+	+rotate(90deg)
+	+ps(absolute, 0%,  0%)
+	+box-shadow(0px 0px 0px 6px $animal-border-color, inset 0px 0px 0px 20px $pig-bg-color)
+
+.animal-ear.pig.right	
+	+rotate(180deg)
+	+ps(absolute, 50%,  0%)
+
+.animal-bg.pig:after
+	+box-shadow(inset 0px 170px 0px $pig-bg-color, inset 0px 180px 0px #000)
+
+.animal-eye-socket.pig
+	+rotate(0deg)
+	background-color: transparent
+	left: 42px
+	top: 25px
+
+.animal-eye-socket.pig.right
+	left: 225px		
+
+.animal-eye-ball.pig 
+	+rotate(0deg)
+	+ps(absolute, 40%, 45px)
+	+bx(#000, 25px, 25PX)
+	margin-left: -20px
+
+.animal-eye-pupil.pig 
+	+ps(absolute, 15px, 10px)
+	+bx(#fff, 10px, 10px)
+	//margin-left: -10px
+
+.animal-eye-pupil.pig:before
+	content: " "
+	display: block
+	+bx(#fff, 5px, 5px)
+	left: 6px
+	top: -4px
+
+.animal-nose.pig 
+	+bx(darken($pig-bg-color, 10%), percentage(85px / $diameter), percentage(70px / $diameter))
+	top: 60px
+	z-index: 2
+	margin-left: - percentage(85px / $diameter) / 2
+	border: 1px solid darken($pig-bg-color, 15%)
+	+box-sizing(border-box)
+	&:before,
+	&:after 
+		content: ""
+		display: block
+		+bx(rgb(5, 5, 5), 10px, 30px)
+		+ps(absolute, 20px, 20px)
+	&:after
+		left: 55px	
+
+.animal-mouth.pig 
+	+bx(transparent, 120px, 30px)
+	+ps(absolute, 50%, 120px)
+	margin-left: -60px
+	+box-shadow(0px 10px 0px -5px #000)
+	&:before,
+	&:after
+		content: ''
+		+bx($pig-bg-color, 70px, 55px)
+		+ps(absolute, -70px, -33px)
+		display: block
+		+box-shadow(inset $pig-bg-color 0px -5px 0px 10px, 0px -7px 0px -3px rgb(189, 142, 150))
+	&:after
+		left: 115px
+
+// PIG ARM
+//======================
+.arm.animal-arm.pig,
+.leg.animal-leg.pig
+	background-color: $pig-bg-color	
+
+//Pig torso
+.torso.animal-torso.pig
+	@extend %animal-torso-light
+	background-color: $pig-bg-color	
+	&:before
+		background-color: $pig-bg-color	
+
+// PIG TAIL
+//================
+.tail.pig
+	+bx(transparent, 160px, 100px, 50%)
+	+ps(absolute, 0px, 30px)
+	+rotate(60deg)
+	+tail(black,2px,20px,5px,0)
+	z-index: -10
+	&:after
+		content: ''
+		display: block
+		+bx(transparent, 162px, 100px, 50%)
+		+ps(absolute, 3px, 0px)
+		+tail($pig-bg-color,2px,10px,2px,0)		
+
+// FULL PIG
+// ================
+.animal-head-bg.pig
+	background-color: $pig-bg-color		
+
+// move down facial features on full animals
+.animal-head 
+	.animal-eye-socket.pig
+		top: 30%
+	.animal-nose.pig 
+		top: 50%
+	.animal-mouth.pig
+		top: 67%
+		&:before,
+		&:after 
+			top: -55px
+		
+

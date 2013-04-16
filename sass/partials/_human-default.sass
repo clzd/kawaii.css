@@ -1,0 +1,104 @@
+// the 'body' or the container that wraps each characters elements
+.kawaii
+	// characters shouldnt be taller that 1.5 heads to retain cuteness
+	+bx(transparent, $hat_diameter, $diameter + $diameter / 2)
+	position: relative
+	margin: 0 auto
+	//float: left
+	z-index: 1
+
+// This wraps all hat / head elements ONLY (pony-tail is not included)
+// sets positioning context
+.head
+	position: relative
+	z-index: 1
+
+.skull
+	+ps(absolute, 50%, 8%)
+	margin-left: -150px
+	z-index: -1	
+	+bx(rgb(255, 223, 196), $diameter, $diameter)
+
+.face
+	+border-radius(50%)
+	+ps(absolute, 50%, 0%)
+	+bx(peach, $diameter, $diameter)
+	margin-left: -$diameter / 2
+	overflow: hidden
+	border: 6px solid #000
+	+box-sizing(border-box)
+
+.eye
+	+bx(#000, $diameter / 10, $diameter / 10)
+	+ps(absolute, 20%, 73%)
+
+	// eye shine
+	&:before,
+	&:after
+		content: ' '
+		display: block
+		+bx(rgba(255,255,255,1), 5px, 5px)
+		+ps( absolute, 50%, 20%)
+
+	&:after	
+		+bx(rgba(255,255,255,1), 9px, 9px)
+		+ps( absolute, 30%, 45%)
+
+.eye.right
+	+ps(absolute, auto, 73%)
+	right: 20%
+
+.mouth
+	+ps( absolute, 50%, 80%)
+	// make bx mixin have radius variable
+	+bx(transparent, 50px, 25px)
+	// can animate this mouth using border width
+	//border-bottom: 14px solid $lip-color;
+	border-bottom: 7px solid $lip-color
+	margin-left: -25px
+
+.cheeks
+	+bx($pink, percentage(30px / $diameter), percentage(30px / $diameter))
+	+ps( absolute, 15%, 80%)
+
+.cheeks.right
+	left: auto
+	right: 15%
+
+//TORSO
+//=====================
+.torso
+	+bx(transparent, $diameter / 3 - 20, auto, 0)
+	+ps(absolute, 50%, 270px)
+	margin-left: -40px
+
+//ARMS
+//=====================
+.arm
+	+bx(#fff, 50px, 150px, 50px)
+	+ps(absolute, 0px, 0%)
+	+transform-origin(50%, 0%)
+	+box-sizing(border-box)
+	+box-shadow(inset 0px -60px 0 -30px $skin-color, inset 0px -68px 0 -30px $sock-stripe-top, inset 0px -75px 0 -30px $sock-stripe-middle, inset 0px -80px 0 -30px $sock-stripe-bottom)
+	+rotate(25deg)
+	border: 6px solid
+	z-index: -1
+
+.arm.right
+	left: 32px
+	+rotate(-25deg)
+
+// LEGS
+//=======================
+.leg
+	+bx($skin-color, 50px, 125px, 120px)	
+	+ps(absolute, -15px, 90px)
+	+box-sizing(border-box)
+	border: 6px solid $shoe-color
+	border-bottom-width: 20px 
+	+box-shadow(inset 0px -20px 0 0px white, inset 0px -24px 0 0px $sock-stripe-bottom, inset 0px -28px 0 0px $sock-stripe-middle, inset 0px -35px 0 0px $sock-stripe-top)
+	z-index: -1
+
+.leg.right
+	+rotate(0deg)
+	left: 45px

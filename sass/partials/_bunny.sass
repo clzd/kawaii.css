@@ -1,0 +1,82 @@
+// BUNNY HAT
+//=========================================
+.animal-ear.bunny 
+	+bx($pink, percentage(100px / $diameter), percentage(250px / $diameter), 100px)	
+	left: 10%
+	top: - percentage(100px / $diameter)
+	+transform-origin( 50% 100% 0)
+	+rotate(-5deg)
+	+backface-visibility(visible)
+	+box-shadow(inset 0px 0px 0px 6px rgb(0, 0, 0), inset 0px 0px 0px 30px #fff, inset 0px 0px 0px 33px rgb(187, 136, 145))
+
+.animal-ear.bunny.right
+	left: auto
+	right: 10%
+	+rotate(5deg)	
+
+.animal-eye-socket.bunny
+	+rotate(0deg)
+	width: percentage(50px / $diameter)
+	height: percentage(50px / $diameter)
+	background-color: transparent	
+	left: 10%
+	top: 30%
+
+.animal-eye-socket.bunny.right
+	left: 70%
+
+.animal-eye-ball.bunny
+	+rotate(0deg)
+	background-color: black
+
+.animal-eye-pupil.bunny
+	+bx($bunny-bg-color, 8px, 8px)
+	+ps(absolute,50%,30%)
+	margin-left: -4px
+	&:before
+		+ps(absolute, 7px, -5px)
+
+.animal-nose.bunny
+	@extend %triangle_nose
+	top: 40%
+	margin-left: -30px
+
+.animal-mouth.bunny
+	background-color: $bunny-bg-color
+	width: 80px
+	height: 55px
+	left: 50%
+	top: 38%
+	margin-left: -40px
+	+box-shadow(0px 10px 0px 0px #000)
+	z-index: 1
+
+// BUNNY ARM
+//================
+.arm.animal-arm.bunny
+	background-color: $bunny-bg-color
+
+// BUNNY LEG
+//================
+.leg.animal-leg.bunny
+	background-color: $bunny-bg-color
+
+// BUNNY TORSO
+//================
+.torso.animal-torso.bunny
+	@extend %animal-torso-light
+
+// FULL BUNNY 
+// ================
+.animal-head-bg.bunny
+	background-color: $bunny-bg-color
+
+// move down facial features on full animals
+.animal-head 
+	.animal-eye-socket.bunny
+		top: 50%
+	.animal-nose.bunny 
+		top: 60%
+	.animal-mouth.bunny
+		top: 58%
+

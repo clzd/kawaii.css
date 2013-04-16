@@ -1,0 +1,8 @@
+/* the humans responsible & colophon */
+/* humanstxt.org */
+
+/* TEAM */
+  Anthony Calzadilla
+  Site: clzd.me
+  Twitter: @clzd
+  Location: Miami, Florida

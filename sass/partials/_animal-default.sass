@@ -1,0 +1,266 @@
+// triangle nose
+%triangle_nose
+	width: auto
+	height: auto
+	background-color: transparent
+	top: 31%
+	left: 50%
+	+border-radius(50%)
+	+rotate(180deg)
+	border-bottom: 26px solid #000
+	border-left: 26px solid transparent
+	border-right: 26px solid transparent
+	margin-left: -20px	
+	z-index: 2
+	&:before
+		content: ''
+		display: block	
+		width: auto
+		height: auto
+		background-color: transparent
+		+ps(absolute, 50%, 30px)
+		+border-radius(50%)
+		border-bottom: 14px solid $pink
+		border-left: 14px solid transparent
+		border-right: 14px solid transparent
+		margin-left: -14px
+	&:after
+		content: ''
+		display: block
+		+bx(#000, 10px, 25px)
+		+border-radius(0)		
+
+// animal head
+%animal-head
+	+bx(transparent, $diameter + 20, $diameter + 20)
+	z-index: 1
+	position: relative
+	display: block
+	margin: 0 auto
+
+// the black animal torso
+%animal-torso-black
+	+bx(transparent, $diameter / 3 - 20, auto, 0%)
+	+ps(absolute, 50%, 60%)
+	margin-left: -63px
+	border-bottom:  $diameter / 3 solid #000
+	border-left:  20px solid transparent
+	border-right:  20px solid transparent
+	&:before,
+	&:after
+		content: ''
+		+bx(rgba(255,255,255,1), 90px, 70px )
+		+ps(absolute, 50%, 80px)
+		margin-left: -45px
+		display: block
+		border: none
+	&:after 
+		+bx(#000, 122px, 120px, 50% 50% 50px 50px)
+		left: 50%
+		top: 55px
+		margin-left: -61px
+		z-index: -1
+
+%animal-torso-light
+	&:before
+		width: 110px
+		height: 136px
+		margin-left: -55px
+		top: 30px
+		+border-radius(40px)
+
+// this creates tails
+=tail($color: $cat-bg-color, $bt: 2px, $br: 50px, $bb: 25px, $bl: 0)	
+	border-top: $bt solid transparent
+	border-right: $br solid $color
+	border-bottom: $bb solid $color
+	border-left: $bl
+
+// basic hat container 
+// default hat is 20px wider becuz we need had to give overlap illusion
+.hat
+	@extend %animal-head
+
+//need this wrap to cut direct descendents box-shadows
+.animal-bg-wrap
+	+bx(transparent, $hat_diameter, $hat_diameter)
+	overflow: hidden	
+	position: absolute
+
+// this guy's pseudo elements create the concave brim of the hat
+.animal-bg
+	width: 100%
+	height: percentage(200px / $diameter)
+	margin-top: 0px
+	position: absolute
+	overflow: hidden
+
+	// this gives the hat it's outline
+	&:before
+		content: ''
+		+bx(transparent, 100%, $hat_diameter)
+		display: block
+		position: absolute
+		+box-shadow(inset 0px 0px 0px 6px $animal-border-color)
+		z-index: 10
+
+	// this gives the hat its horzontal 'brim' and bg color	
+	&:after
+		content: ''
+		display: block
+		+bx(transparent, $animal-brim, $animal-brim / 2)
+		position: absolute
+		left: 50%
+		margin-left: -$animal-brim / 2
+		+box-shadow(inset 0px 170px 0px lighten($animal-bg-color, 100%), inset 0px 180px 0px $animal-border-color)
+
+// the panda hat's ear		
+.animal-ear
+	+bx(lighten(rgba(0,0,0,1), 25%), percentage(150px / $diameter), percentage(150px / $diameter))
+	+ps(absolute, -20%, 0px)
+	z-index: -1
+	+box-shadow(inset 0px 0px 0px 35px #000)
+
+.animal-ear.right 
+	left: auto	
+	right: -20%
+
+.animal-eye-socket	
+	+bx(rgba(0,0,0,1), percentage(80px / $diameter), percentage(100px / $diameter))
+	+ps( absolute, 13%, percentage(45px / $diameter))
+	+rotate(45deg)
+	z-index: 2
+
+.animal-eye-socket.right
+	+ps( absolute, auto, percentage(45px / $diameter))
+	right: 13%
+	+rotate(-45deg)
+
+.animal-eye-ball
+	+ps( absolute, 50%, 25%)
+	+bx(rgba(255,255,255,1), 40px, 40px)
+	+rotate(-45deg)
+	margin-left: -15px
+
+.animal-eye-ball.right
+	+rotate(45deg)
+
+.animal-eye-pupil	
+	+ps( absolute, 50%, 20%)
+	+bx(rgba(0,0,0,1), 20px, 20px)
+	margin-left: -10px
+	// eye shine
+	&:before
+		content: ' '
+		display: block
+		+bx(rgba(255,255,255,1), 5px, 5px)
+		+ps( absolute, 50%, 20%)
+
+.animal-nose
+	+bx(#222, percentage(33px / $diameter), percentage(27px / $diameter))	
+	+ps( absolute, 50%, 31%)
+	margin-left: - percentage(33px / $diameter) / 2
+	z-index: 2
+
+.animal-mouth
+	+bx(transparent, percentage(50px / $diameter), percentage(25px / $diameter))	
+	+ps( absolute, 50%, 40%)
+	//regular smile
+	//+box-shadow(0px 10px 0px -5px rgba(0,0,0,1))
+	//side smile
+	+box-shadow(-5px 10px 0px -5px rgba(0,0,0,1))
+	margin-left: - percentage(50px / $diameter) / 2
+	z-index: 2
+
+// ARM STYLES
+//=========================================
+
+// DEFAULT ARM
+//default animal arm styles
+.arm.animal-arm
+	+bx(white, 50%, 150px, 50px)
+	+ps(absolute, 0px, 0%)
+	+transform-origin(50%, 0%)
+	+box-sizing(border-box)
+	+box-shadow(none)
+	+rotate(25deg)
+	border: 6px solid
+	z-index: -1
+
+.arm.animal-arm.right
+	left: auto
+	right: 0
+	+rotate(-25deg)
+
+// COSTUME ARM
+//naked arm styles for costumes
+.arm.animal-arm.costume
+	background-color: $skin-color
+
+// ANIMAL LEG STYLES
+//=========================================
+
+//DEFAULT
+//default animal leg styles
+.leg.animal-leg
+	+bx(white, 50px, 125px, 100px)	
+	+ps(absolute, -10px, 90px)
+	+box-sizing(border-box)
+	+rotate(15deg)
+	+box-shadow(none)
+	z-index: -1
+	border: 6px solid #000
+	border-bottom-width: 10px
+	&:before,
+	&:after
+		display: none
+
+.leg.animal-leg.right
+	+rotate(-15deg)
+	left: 40px
+
+//SKIN COLOR COSTUME LEG
+//========================
+.leg.animal-leg.costume
+	background-color: $skin-color
+	border-bottom-width: 20px 
+	&:before, 
+	&:after
+		content: ' '
+		+bx(transparent, 44px, 25px, 50%)
+		+ps(absolute, 50%,  90%)
+		border-top: 5px solid black
+		margin-left: -22px
+		bottom: 0
+		display: block
+		z-index: 1
+
+//TORSO STYLES
+//=====================
+.torso.animal-torso
+	@extend %animal-torso-black
+
+// DEFAULT FULL ANIMAL STYLES
+//===================
+.animal-head
+	@extend %animal-head
+	position: relative
+	top: 50px
+
+.animal-head-bg
+	+bx(#fff, 100%, 90%, 50%)
+	border: 7px solid #000
+	+box-sizing(border-box)
+
+// DEFAULT COSTUME STYLES
+//================
+.animal-head.costume
+	width: 400px
+	height: 380px
+	top: 10px
+	margin-left: -200px
+	left: 50%
+
+.skull.costume
+	z-index: 3
+

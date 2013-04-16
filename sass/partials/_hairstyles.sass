@@ -1,0 +1,202 @@
+// Provides positioning context for child hair elements and top black border for hair
+// also clips the hair pieces with overflow hidden 
+.hair
+	+bx(transparent, $diameter, $diameter)
+	overflow: hidden
+	position: relative
+	z-index: 1
+	border-top: 8px solid black
+
+// TODO: should this be nested?
+.hair-part-front
+	+bx($hair-color, $animal-brim, $animal-brim / 2)
+	+ps( absolute, 0%, -15%)
+	margin-left: 0
+	+box-shadow(0px 10px 0px -5px darken( $hair-color, 25% ), inset -50px 0px 0px 20px rgba(128, 0, 0, 0.25))
+
+// TODO: should this be nested?
+.hair-part-back	
+	+bx($hair-color, $animal-brim, $animal-brim / 2)
+	+box-shadow(0px 10px 0px -5px darken( $hair-color, 25% ) )
+	+ps( absolute, -110%, -15%)
+	z-index: -1
+
+// TODO: should this be nested?
+.pony-tail
+	+bx(transparent, 100%, $diameter / 2, 0% )
+	position: absolute
+	left: 0
+	bottom: 150px
+	z-index: -20
+
+.pony-tail-left,
+.pony-tail-right
+	+bx($hair-color, 80px, 80px, 50% 10px )
+	+ps( absolute, 0px, 90px)
+	+transform-origin(0%, 0%)
+	+rotate(0deg)
+	+box-shadow(inset 0px 0px 0 5px darken( $hair-color, 25% ))
+	+backface-visibility(hidden)
+
+.pony-tail-right
+	+ps( absolute, 75%, 90px)
+	+border-radius(10px 50%)
+	+transform-origin(100%, 0%)
+	+rotate(5deg)	
+
+// default top
+//=============
+.pony-tail-left.top,
+.pony-tail-right.top
+	top: -120px
+	left: 30px
+	+transform-origin(50%, 0, 0)
+	+border-radius(50% 50% 50% 5px)
+	+rotate(90deg)
+
+.pony-tail-right.top
+	+border-radius(5px 50% 50% 50%)
+	left: auto
+	right: -40px
+
+//HAIR STYLES
+//=========================================
+//concave hair
+.hair-part-front.concave
+	+bx(transparent, $animal-brim, $animal-brim / 2)
+	+ps(absolute, -30%, 40%)
+	+box-shadow(inset -45px 0px 0px 45px $hair-color, inset -50px 0px 0px 50px darken( $hair-color, 25% ))
+	+rotate(15deg)
+
+//concave hair
+.hair-part-back.concave
+	+bx(transparent, $animal-brim, $animal-brim / 2 + 50)
+	+ps(absolute, -45%, 40%)
+	+box-shadow(inset 45px 0px 0px 45px $hair-color, inset 50px 0px 0px 50px darken( $hair-color, 25% ))
+	+rotate(-35deg)	
+
+// straight bob cut hair
+.pony-tail-left.straight,
+.pony-tail-right.straight
+	+bx($hair-color, $diameter / 2, $diameter / 2, 0% )
+	+ps( absolute, 10px, 0px)
+	+transform-origin(0%, 0%)
+	+rotate(-5deg)
+	+box-shadow(inset 0px 0px 0 5px darken( $hair-color, 25% ))
+	+backface-visibility(hidden)
+
+// straight bob cut hair right side
+.pony-tail-right.straight
+	+ps(absolute, 100%, 0px)
+	margin-left: -($diameter / 2 + 10px)
+	+transform-origin(100%, 0%)
+	+rotate(5deg)
+
+// skater hair 
+.hair-part-front.skater
+	width: 350px
+	height: 225px
+	left: 0%
+	top: -25px
+	border: 6px solid #000000
+	border-left: none
+	//set transform origin point to left/enter
+	+transform-origin(0,50%,0,0)
+	+rotate(6deg)
+	+border-radius(200px 300px 0 130px)
+	+box-shadow(inset -5px -5px 0 0px rgba(128,0,0,0.25), -15px 30px 0 -24px rgba(128,0,0,0.15))
+
+.hair-part-back.skater	
+	width: 200px
+	height: 250px
+	border: 6px solid #000000
+	left: -10px
+	top: 10px
+	+box-shadow(none)
+
+//PUFFY SKATER
+.hair-part-front.skater.puff	
+	width: 360px
+	height: 240px
+	left: 16px
+	top: -10px
+	border-left: 1px solid red
+	+rotate(0deg)
+	+border-radius(50%)	
+
+.hair-part-back.skater.puff
+	width: 260px
+	height: 210px
+	border: 6px solid #000
+	left: -10px
+	top: 20px
+
+//MR. T mohawk 
+.hair-part-front.mrt
+	width: 100px
+	height: 200px
+	+border-radius(50px)
+	left: 50%
+	margin-left: -50px
+	top: -50px
+	+box-shadow(inset -5px -5px 0 0px rgba(128, 0, 0, 0.25), 0px 30px 0 -15px rgba(128, 0, 0, 0.15))
+
+.hair-part-back.mrt 
+	width: 200px
+	height: 175px
+	+border-radius(70px)
+	left: 0px
+	top: 20px
+	&:after 
+		content: ''
+		display: block
+		width: 200px
+		height: 175px
+		+border-radius(70px)
+		left: auto
+		right: -120px
+		background: red
+		position: absolute
+
+// PUFFY HAIR STYLE
+.hair-part-front.puff
+	+bx(red, 350px, 350px)
+	+ps(absolute, 150px, -150px)
+
+.hair-part-back.puff	
+	+bx(red, 500px, 250px)
+	+ps(absolute, -250px, -70px)
+
+.pony-tail-left.puff,
+.pony-tail-right.puff	
+	+bx(red, 100px, 100px, 50%)
+	+ps(absolute, -35px, 70px)
+
+.pony-tail-right.puff
+	left: 250px	
+
+//puff top hairstyle
+.pony-tail-left.puff.top,
+.pony-tail-right.puff.top
+	top: -110px
+	left: 10px
+
+.pony-tail-right.puff.top
+	left: auto
+	right: -85px
+
+// princess leia
+//=============
+.pony-tail.leia
+	left: 0
+	top: 0
+
+.pony-tail-left.leia,
+.pony-tail-right.leia		
+	+bx(red, 110px, 200px, 50%)
+	+ps(absolute, -30px, 60px)
+	+rotate(0deg)
+
+.pony-tail-right.leia
+	left: 240px	
+

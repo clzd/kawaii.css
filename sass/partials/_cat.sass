@@ -1,0 +1,99 @@
+// CAT HAT
+//=========================================
+.animal-ear.cat
+	background-color: lighten($animal-bg-color, 5%)
+	+border-radius(50% 50% 50% 5px)
+	+rotate(90deg)
+	+ps(absolute, 0%,  0%)
+	+box-shadow(0px 0px 0px 6px $animal-border-color, inset 0px 0px 0px 20px $cat-bg-color)
+
+.animal-ear.cat.right	
+	+rotate(180deg)
+	+ps(absolute, auto,  0%)
+	right: 0
+
+.animal-bg.cat
+	&:after
+		+box-shadow(inset 0px 170px 0px $cat-bg-color, inset 0px 180px 0px $animal-border-color)
+
+.animal-eye-socket.cat
+	+bx(#000, 60px, 45px, 50% 50px)	
+	+rotate(0deg)
+	top: 100px
+	//left: 30px
+
+.animal-eye-socket.cat.right
+	+border-radius(50px 50%)
+	//left: 230px
+
+.animal-eye-ball.cat
+	+rotate(0deg)
+	background-color: rgb(235, 255, 0)	
+	height: 45px
+	width: 50px
+	margin-left: -25px
+	overflow: hidden
+	+box-shadow(inset 0 0 0 2px darken(rgb(235, 255, 0), 20%))
+
+.animal-eye-pupil.cat	
+	+bx(#000, 18px, 44px)
+	+ps(absolute, 60%, -5px)
+	margin-left: -9px
+	+box-shadow(inset 0px 0px 0px 5px rgb(146, 155, 47))
+
+.animal-nose.cat
+	@extend %triangle_nose
+	margin-left: -25px
+		
+.animal-mouth.cat
+	+bx(transparent, 24px, 24px, 10px)
+	+ps(absolute, 50%, 145px)
+	+rotate(45deg)
+	+box-shadow(none)
+	margin-left: -11px
+	border-top: 8px solid #000
+	border-left: 8px solid #000
+
+// CAT ARM
+//===========================
+.arm.animal-arm.cat,
+.leg.animal-leg.cat
+	background-color: $cat-bg-color	
+
+//CAT TORSO
+//===========================
+.torso.animal-torso.cat
+	@extend %animal-torso-light
+	&:before
+		background-color: $cat-bg-color
+		
+// CAT TAIL
+//================
+
+// default tail is cat
+.tail
+	+bx(transparent, 160px, 100px, 50%)
+	+ps(absolute, 0px, 30px)
+	+rotate(60deg)
+	+tail(black)
+	z-index: -10
+	&:after
+		content: ''
+		display: block
+		+bx(transparent, 160px, 105px, 50%)
+		+ps(absolute, 8px, 0px)
+		+tail($cat-bg-color,2px,35px,12px,0)
+
+// FULL CAT 
+// ================
+.animal-head-bg.cat
+	background-color: $cat-bg-color	
+
+// move down facial features on full animals
+.animal-head 
+	.animal-eye-socket.cat
+		top: 50%
+	.animal-nose.cat 
+		top: 60%
+	.animal-mouth.cat
+		top: 74%

@@ -1,0 +1,88 @@
+.shirt
+	+bx(transparent, $diameter / 3 - 20, auto, 25px)
+	+ps(absolute, 50%, 60%)
+	//TODO I'm not even sure this would scale properly
+	margin-left: -71px 
+	border-bottom:  $diameter / 3 solid #000
+	border-left:  $diameter / 10 solid transparent
+	border-right:  $diameter / 10 solid transparent
+	&:before
+		content: ''
+		display: block
+		+bx(transparent, 63px, auto, 15px)
+		+ps(absolute, -28%, -7px)
+		border-bottom:  $diameter / 3 solid #fff
+		border-left:  $diameter / 10 solid transparent
+		border-right:  $diameter / 10 solid transparent
+	&:after 
+		content: ''
+		display: block
+		+bx($skin-color, 40px, 50px)
+		+ps(absolute, 50%, 10px)
+		margin-left: -25px
+		border: 6px solid $animal-bg-color
+
+.shirt.square		
+	&:after 
+		+bx($skin-color, 35px, 35px, 0)
+		top: 0px
+		+rotate(45deg)
+	
+.skirt	
+	+bx(transparent, 120px, 110px, 25px)
+	+ps(absolute, 50%, -37px)
+	margin-left: -86px
+	z-index: -1
+	border-bottom:  $diameter / 4 solid black
+	border-left:  $diameter / 12 solid transparent
+	border-right:  $diameter / 12 solid transparent
+	&:before
+		content: ''
+		display: block
+		+bx(transparent, 100px, 110px, 15px)
+		+ps(absolute, 50%, -7px)
+		margin-left: -75px
+		border-bottom:  $diameter / 4 solid $animal-bg-color
+		border-left:  $diameter / 12 solid transparent
+		border-right:  $diameter / 12 solid transparent
+
+.shorts
+	+bx(red, 120px, 60px,  0)
+	+ps(absolute, 50%, 83px)
+	border: 6px solid
+	margin-left: -60px
+	z-index: -1
+	+box-sizing(border-box)
+	&:before, 
+	&:after 
+		content: ''
+		display: block
+		+bx(red, 59px, 25px,  0)
+		+ps(absolute, -6px, 40px)
+		border: 6px solid
+		border-top: 0
+		+box-sizing(border-box)
+
+	&:after
+		left: 55px	
+
+// SLIPPER SHOES
+//=======================
+.leg.slipper
+	&:before, 
+	&:after
+		content: ' '
+		+bx(transparent, 44px, 25px)
+		+ps(absolute, 50%,  90%)
+		border-top: 5px solid $shoe-color
+		margin-left: -22px
+		position: absolute
+		bottom: 0
+		display: block
+		z-index: 1
+	
+// REGULAR SHOES
+//=======================
+.leg.shoe
+	+border-radius(10px)
+	+box-shadow(inset 0px -10px 0 0px #fff,inset 0px -14px 0 0px #8fc1f8,inset 0px -18px 0 0px #fff,inset 0px -25px 0 0px #000)
