@@ -1,109 +1,108 @@
-//MOUTH STYLES
+// MOUTH STYLES
 //=========================================
 
+// AMUSED MOUTH
+//=============
+.mouth.amused
+	//+box-shadow(inset 0 -20px 0 10px #000)
+	border-bottom: 1.5em solid #f5f2f2
+	width: 8em
+	height: 8em
+	top: 19em
+	position: relative
+	margin-left: -3.5em
+	//this hides little residual lines from mouth
+	&:before
+		content: ''
+		display: block
+		+bx($skin-color, 9em, 5em)
+		left: -0.5em
+		top: 1em
+		position: relative
+		z-index: -1
+	&:after
+		content: ''
+		display: block
+		+bx(transparent, 8em, 9.5em, 50%)
+		top: 0
+		z-index: -1
+		border-bottom: 3em solid $lip-color
+		top: -0.7em
+		position: absolute
+		z-index: -2
+		
+// PLAYFUL MOUTH
+//=============
+.mouth.playful
+	background-color: $skin-color
+	border-color: #000
+	width: 6.5em
+	margin-left: -3.2em
+	&:before
+		content: ''
+		display: block
+		+bx($skin-color, 7.5em, 2.5em)
+		+ps(absolute, -0.5em, -0.5em)
+	&:after
+		content: ''
+		display: block
+		+bx(red, 2.5em, 4em, 2.5em)
+		+ps(absolute, 2.5em, 0.8em)
+		+transform-origin(50%, 0, 0)
+		+rotate(-30deg)
+		z-index: -1
+		+box-shadow(inset 0px 0px 0px 0.3em rgba(0,0,0,1))
+		
+//SAD MOUTH
+//=============
+.mouth.sad,
+.mouth.displeased
+	border-top: 0.7em solid rgb(0, 0, 0)
+	border-bottom: none
+	top: 25em
+	&:after
+		content: ''
+		display: block
+		+bx($skin-color, 6em, 3em)
+		+ps(absolute, -0.5em, 0px)
+		
+//DISPLEASED MOUTH
+//=============
+.mouth.displeased
+	border-top: 0.5em solid rgb(0, 0, 0)
+	width: 7em
+	+border-radius(5em)
+	left: 13.5em
+	&:after
+		width: 8em
+		//+ps(absolute, -0.5em, 0px)
+		
+//SLEEPY MOUTH
+//=============
+.mouth.sleepy
+	+bx(#000, 2em, 2em, 50%)
+	border: none
+	top: 25em
+	margin-left: -0.5em
+	&:before,
+	&:after
+		display: none
+		
 // HEART MOUTH
 //=============
 .heart-mouth
 	+ps( absolute, 50%, 85%)
 	border: none
-	margin-left: -8px
+	margin-left: -0.8em
 	&:before,
 	&:after
 		content: ' '
 		display: block
-		+bx($lip-color, 15px, 25px, 50px 50px 0 0)
-		+ps(absolute, -8px, 0)
+		+bx($lip-color, 1.5em, 2.5em, 5em 5em 0 0)
+		+ps(absolute, -0.8em, 0)
 		+rotate(-45deg)
 		+transform-origin(0 100%)
 	&:after
 		+ps(absolute, 0px, 0)	
 		+rotate(45deg)
 		+transform-origin(100% 100%)
-
-// AMUSED MOUTH
-//=============
-.mouth.amused
-	//+box-shadow(inset 0 -20px 0 10px #000)
-	border-bottom: 15px solid #f5f2f2
-	width: 80px
-	height: 65px
-	top: 190px
-	position: relative
-	margin-left: -35px
-	//this hides little residual lines from mouth
-	&:before
-		content: ''
-		display: block
-		+bx($skin-color, 90px, 50px)
-		left: -5px
-		top: 10px
-		position: relative
-		z-index: 2
-	&:after
-		content: ''
-		display: block
-		+bx(transparent, 80px, 65px, 50%)
-		border-bottom: 40px solid rgb(0, 0, 0)
-		top: 0
-		z-index: -1
-		border-bottom: 30px solid #000
-		top: -7px
-		position: absolute
-		z-index: -1 
-
-// PLAYFUL MOUTH
-//=============
-.mouth.playful
-	background-color: $skin-color
-	border-color: #000
-	width: 65px
-	margin-left: -32px
-	&:before
-		content: ''
-		display: block
-		+bx($skin-color, 75px, 30px)
-		+ps(absolute, -5px, -5px)
-	&:after
-		content: ''
-		display: block
-		+bx(red, 25px, 40px, 25px)
-		+ps(absolute, 25px, 15px)
-		+transform-origin(50%, 0, 0)
-		+rotate(-30deg)
-		z-index: -1
-		+box-shadow(inset 0px 0px 0px 3px rgba(0,0,0,1))
-
-//SAD MOUTH
-//=============
-.mouth.sad,
-.mouth.displeased
-	border-top: 7px solid rgb(0, 0, 0)
-	border-bottom: none
-	top: 250px
-	&:after
-		content: ''
-		display: block
-		+bx($skin-color, 60px, 30px)
-		+ps(absolute, -5px, 0px)
-
-//DISPLEASED MOUTH
-//=============
-.mouth.displeased
-	border-top: 5px solid rgb(0, 0, 0)
-	width: 70px
-	+border-radius(50px)
-	left: 135px
-	&:after
-		width: 80px
-		//+ps(absolute, -5px, 0px)
-
-//SLEEPY MOUTH
-//=============
-.mouth.sleepy
-	+bx(#000, 20px, 20px, 50%)
-	border: none
-	top: 250px
-	margin-left: -5px
-	&:before,
-	&:after
-		display: none

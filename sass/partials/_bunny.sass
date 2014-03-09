@@ -1,13 +1,13 @@
 // BUNNY HAT
 //=========================================
 .animal-ear.bunny 
-	+bx($pink, percentage(100px / $diameter), percentage(250px / $diameter), 100px)	
+	+bx($pink, percentage(10em / $diameter), percentage(25em / $diameter), 10em)	
 	left: 10%
-	top: - percentage(100px / $diameter)
+	top: - percentage(10em / $diameter)
 	+transform-origin( 50% 100% 0)
 	+rotate(-5deg)
 	+backface-visibility(visible)
-	+box-shadow(inset 0px 0px 0px 6px rgb(0, 0, 0), inset 0px 0px 0px 30px #fff, inset 0px 0px 0px 33px rgb(187, 136, 145))
+	+box-shadow(inset 0px 0px 0px 0.6em rgb(0, 0, 0), inset 0px 0px 0px 3em #fff, inset 0px 0px 0px 3.3em rgb(187, 136, 145))
 
 .animal-ear.bunny.right
 	left: auto
@@ -16,8 +16,8 @@
 
 .animal-eye-socket.bunny
 	+rotate(0deg)
-	width: percentage(50px / $diameter)
-	height: percentage(50px / $diameter)
+	width: percentage(5em / $diameter)
+	height: percentage(5em / $diameter)
 	background-color: transparent	
 	left: 10%
 	top: 30%
@@ -30,25 +30,25 @@
 	background-color: black
 
 .animal-eye-pupil.bunny
-	+bx($bunny-bg-color, 8px, 8px)
+	+bx($bunny-bg-color, 0.8em, 0.8em)
 	+ps(absolute,50%,30%)
-	margin-left: -4px
+	margin-left: -0.4em
 	&:before
-		+ps(absolute, 7px, -5px)
+		+ps(absolute, 0.7em, -0.5em)
 
 .animal-nose.bunny
 	@extend %triangle_nose
 	top: 40%
-	margin-left: -30px
+	margin-left: -3em
 
 .animal-mouth.bunny
 	background-color: $bunny-bg-color
-	width: 80px
-	height: 55px
+	width: 8em
+	height: 5.5em
 	left: 50%
 	top: 38%
-	margin-left: -40px
-	+box-shadow(0px 10px 0px 0px #000)
+	margin-left: -4em
+	+box-shadow(0px 1em 0px 0px #000)
 	z-index: 1
 
 // BUNNY ARM

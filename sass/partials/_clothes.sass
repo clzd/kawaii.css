@@ -1,88 +1,95 @@
 .shirt
-	+bx(transparent, $diameter / 3 - 20, auto, 25px)
+	+bx(transparent, 14em, auto, 2.5em)
 	+ps(absolute, 50%, 60%)
 	//TODO I'm not even sure this would scale properly
-	margin-left: -71px 
-	border-bottom:  $diameter / 3 solid #000
-	border-left:  $diameter / 10 solid transparent
-	border-right:  $diameter / 10 solid transparent
+	margin-left: -7.1em 
+	border-bottom:	$diameter / 3 solid #000
+	border-left:	$diameter / 10 solid transparent
+	border-right:	$diameter / 10 solid transparent
 	&:before
 		content: ''
 		display: block
-		+bx(transparent, 63px, auto, 15px)
-		+ps(absolute, -28%, -7px)
-		border-bottom:  $diameter / 3 solid #fff
-		border-left:  $diameter / 10 solid transparent
-		border-right:  $diameter / 10 solid transparent
+		+bx(transparent, 12.3em, auto, 1.5em)
+		+ps(absolute, -28%, -0.7em)
+		border-bottom:	$diameter / 3 solid #fff
+		border-left:	$diameter / 10 solid transparent
+		border-right:	$diameter / 10 solid transparent
 	&:after 
 		content: ''
 		display: block
-		+bx($skin-color, 40px, 50px)
-		+ps(absolute, 50%, 10px)
-		margin-left: -25px
-		border: 6px solid $animal-bg-color
-
-.shirt.square		
+		+bx($skin-color, 5.2em, 6.2em)
+		+ps(absolute, 50%, 1em)
+		margin-left: -2.5em
+		border: 0.6em solid $animal-bg-color
+		
+.shirt.square	 
 	&:after 
-		+bx($skin-color, 35px, 35px, 0)
+		+bx($skin-color, 4.7em, 4.7em, 0)
 		top: 0px
 		+rotate(45deg)
-	
+		
 .skirt	
-	+bx(transparent, 120px, 110px, 25px)
-	+ps(absolute, 50%, -37px)
-	margin-left: -86px
+	+bx(transparent, 17em, 18.5em, 2.5em)
+	+ps(absolute, 50%, -3.7em)
+	margin-left: -8.6em
 	z-index: -1
-	border-bottom:  $diameter / 4 solid black
-	border-left:  $diameter / 12 solid transparent
-	border-right:  $diameter / 12 solid transparent
+	border-bottom:	$diameter / 4 solid black
+	border-left:	$diameter / 12 solid transparent
+	border-right:	$diameter / 12 solid transparent
 	&:before
 		content: ''
 		display: block
-		+bx(transparent, 100px, 110px, 15px)
-		+ps(absolute, 50%, -7px)
-		margin-left: -75px
-		border-bottom:  $diameter / 4 solid $animal-bg-color
-		border-left:  $diameter / 12 solid transparent
-		border-right:  $diameter / 12 solid transparent
-
+		+bx(transparent, 15em, 18.5em, 1.5em)
+		+ps(absolute, 50%, -0.7em)
+		margin-left: -7.5em
+		border-bottom:	$diameter / 4 solid $animal-bg-color
+		border-left:	$diameter / 12 solid transparent
+		border-right:	$diameter / 12 solid transparent
+		
 .shorts
-	+bx(red, 120px, 60px,  0)
-	+ps(absolute, 50%, 83px)
-	border: 6px solid
-	margin-left: -60px
+	+bx(red, 12em, 6em,	0)
+	+ps(absolute, 50%, 8.3em)
+	border: 0.6em solid
+	margin-left: -6em
 	z-index: -1
 	+box-sizing(border-box)
 	&:before, 
-	&:after 
+	&:after
 		content: ''
 		display: block
-		+bx(red, 59px, 25px,  0)
-		+ps(absolute, -6px, 40px)
-		border: 6px solid
+		+bx(red, 5.9em, 2.5em,	0)
+		+ps(absolute, -0.56em, 4em)
+		float: left
+		border: 0.6em solid
 		border-top: 0
 		+box-sizing(border-box)
 
 	&:after
-		left: 55px	
+		left: 51%
 
+.shorts.blue
+	background-color: #2591CC
+	&:before,
+	&:after
+		background-color: #2591CC
+	
 // SLIPPER SHOES
 //=======================
 .leg.slipper
 	&:before, 
 	&:after
 		content: ' '
-		+bx(transparent, 44px, 25px)
-		+ps(absolute, 50%,  90%)
-		border-top: 5px solid $shoe-color
-		margin-left: -22px
+		+bx(transparent, 4.4em, 2.5em)
+		+ps(absolute, 50%,	90%)
+		border-top: 0.5em solid $shoe-color
+		margin-left: -2.2em
 		position: absolute
 		bottom: 0
 		display: block
 		z-index: 1
-	
+		
 // REGULAR SHOES
 //=======================
 .leg.shoe
-	+border-radius(10px)
-	+box-shadow(inset 0px -10px 0 0px #fff,inset 0px -14px 0 0px #8fc1f8,inset 0px -18px 0 0px #fff,inset 0px -25px 0 0px #000)
+	+border-radius(1em)
+	+box-shadow(inset 0px -1em 0 0px #fff,inset 0px -1.4em 0 0px #8fc1f8,inset 0px -1.8em 0 0px #fff,inset 0px -2.5em 0 0px #000)

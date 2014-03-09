@@ -2,75 +2,75 @@
 //======================
 .animal-ear.pig
 	background-color: lighten($pig-bg-color, 5%)
-	+border-radius(50% 50% 50% 5px)
+	+border-radius(50% 50% 50% 0.5em)
 	+rotate(90deg)
 	+ps(absolute, 0%,  0%)
-	+box-shadow(0px 0px 0px 6px $animal-border-color, inset 0px 0px 0px 20px $pig-bg-color)
+	+box-shadow(0px 0px 0px 0.6em $animal-border-color, inset 0px 0px 0px 2em $pig-bg-color)
 
 .animal-ear.pig.right	
 	+rotate(180deg)
 	+ps(absolute, 50%,  0%)
 
 .animal-bg.pig:after
-	+box-shadow(inset 0px 170px 0px $pig-bg-color, inset 0px 180px 0px #000)
+	+box-shadow(inset 0px 17em 0px $pig-bg-color, inset 0px 18em 0px #000)
 
 .animal-eye-socket.pig
 	+rotate(0deg)
 	background-color: transparent
-	left: 42px
-	top: 25px
+	left: 4.2em
+	top: 2.5em
 
 .animal-eye-socket.pig.right
-	left: 225px		
+	left: 22.5em		
 
 .animal-eye-ball.pig 
 	+rotate(0deg)
-	+ps(absolute, 40%, 45px)
-	+bx(#000, 25px, 25PX)
-	margin-left: -20px
+	+ps(absolute, 40%, 4.5em)
+	+bx(#000, 2.5em, 2.5em)
+	margin-left: -2em
 
 .animal-eye-pupil.pig 
-	+ps(absolute, 15px, 10px)
-	+bx(#fff, 10px, 10px)
-	//margin-left: -10px
+	+ps(absolute, 1.5em, 1em)
+	+bx(#fff, 1em, 1em)
+	//margin-left: -1em
 
 .animal-eye-pupil.pig:before
 	content: " "
 	display: block
-	+bx(#fff, 5px, 5px)
-	left: 6px
-	top: -4px
+	+bx(#fff, 0.5em, 0.5em)
+	left: 0.6em
+	top: -0.4em
 
 .animal-nose.pig 
-	+bx(darken($pig-bg-color, 10%), percentage(85px / $diameter), percentage(70px / $diameter))
-	top: 60px
+	+bx(darken($pig-bg-color, 10%), percentage(8.5em / $diameter), percentage(7em / $diameter))
+	top: 6em
 	z-index: 2
-	margin-left: - percentage(85px / $diameter) / 2
-	border: 1px solid darken($pig-bg-color, 15%)
+	margin-left: - percentage(8.5em / $diameter) / 2
+	border: 0.1em solid darken($pig-bg-color, 15%)
 	+box-sizing(border-box)
 	&:before,
 	&:after 
 		content: ""
 		display: block
-		+bx(rgb(5, 5, 5), 10px, 30px)
-		+ps(absolute, 20px, 20px)
+		+bx(rgb(5, 5, 5), 1em, 3em)
+		+ps(absolute, 2em, 2em)
 	&:after
-		left: 55px	
+		left: 5.5em
 
 .animal-mouth.pig 
-	+bx(transparent, 120px, 30px)
-	+ps(absolute, 50%, 120px)
-	margin-left: -60px
-	+box-shadow(0px 10px 0px -5px #000)
+	+bx(transparent, 12em, 3em)
+	+ps(absolute, 50%, 12em)
+	margin-left: -6em
+	+box-shadow(0px 1em 0px -0.5em #000)
 	&:before,
 	&:after
 		content: ''
-		+bx($pig-bg-color, 70px, 55px)
-		+ps(absolute, -70px, -33px)
+		+bx($pig-bg-color, 7em, 5.5em)
+		+ps(absolute, -7em, -3.3em)
 		display: block
-		+box-shadow(inset $pig-bg-color 0px -5px 0px 10px, 0px -7px 0px -3px rgb(189, 142, 150))
+		+box-shadow(inset $pig-bg-color 0px -0.5em 0px 1em, 0px -0.7em 0px -0.3em rgb(189, 142, 150))
 	&:after
-		left: 115px
+		left: 11.5em
 
 // PIG ARM
 //======================
@@ -88,17 +88,17 @@
 // PIG TAIL
 //================
 .tail.pig
-	+bx(transparent, 160px, 100px, 50%)
-	+ps(absolute, 0px, 30px)
+	+bx(transparent, 18em, 10.7em, 50%)
+	+ps(absolute, 0px, 3em)
 	+rotate(60deg)
-	+tail(black,2px,20px,5px,0)
+	+tail(black, 0.2em, 2em, 0.5em, 0)
 	z-index: -10
 	&:after
 		content: ''
 		display: block
-		+bx(transparent, 162px, 100px, 50%)
-		+ps(absolute, 3px, 0px)
-		+tail($pig-bg-color,2px,10px,2px,0)		
+		+bx(transparent, 17.2em, 10.4em, 50%)
+		+ps(absolute, 0.3em, 0px)
+		+tail($pig-bg-color, 0.2em, 1em, 0.2em, 0)		
 
 // FULL PIG
 // ================
@@ -115,6 +115,6 @@
 		top: 67%
 		&:before,
 		&:after 
-			top: -55px
+			top: -5.5em
 		
 
