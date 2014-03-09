@@ -1,44 +1,18 @@
 //EYE STYLES
 //=========================================
 
-//LONG EYELASHES 
-//=============
-.eye.eye-lashes
-	+ps(absolute, 20%, 70%)
-	+bx(rgb(0, 0, 0), 30px, 30px)
-	&:after
-		+ps(absolute, -10px, 0px)
-		+bx(rgb(0, 0, 0), 40px, 15px)
-		+border-radius(50% 50px)
-		z-index: -3
-
-.eye.eye-lashes.right
-	+ps(absolute, 70%, 70%)
-	&:after
-		+ps(absolute, 0px, 0px)
-		+border-radius(50px 50%)
-
 //AMUSED EYES
 //=============
 .eye.amused
-	height: 20px
+	height: 2em
 	background-color: transparent
-	+box-shadow(inset -2px 5px 0px 0px #000)
+	+box-shadow(inset -0.2em 0.5em 0px 0px #000)
 	&:before,
 	&:after
 		display: none
 
 .eye.amused.right
-	+box-shadow(inset 2px 5px 0px 0px #000)
-
-// AMUSED CHEEKS
-//=============
-.cheeks.amused
-	left: 54px
-	top: 220px
-
-.cheeks.amused.right
-	left: 205px
+	+box-shadow(inset 0.2em 0.5em 0px 0px #000)
 
 //PLAYFUL EYES
 //=============
@@ -48,18 +22,18 @@
 	&:before
 		content: ''
 		display: block
-		+bx($skin-color, 80px, 20px)
-		+ps(absolute, -20px, 15px)
+		+bx($skin-color, 8em, 2em)
+		+ps(absolute, -2em, 1.5em)
 	&:after
 		content: ''
 		display: block
-		+bx(#fff, 4px, 4px)
-		+ps(absolute, 7px, 6px)
+		+bx(#fff, 0.4em, 0.4em)
+		+ps(absolute, 0.7em, 0.6em)
 		
 //SAD EYES
 //=============
 .eye.sad
-	height: 25px
+	height: 2.5em
 	+rotate(-15deg)
 	&:before,
 	&:after
@@ -72,47 +46,73 @@
 	&:after	
 		content: ''
 		display: block
-		+bx(rgb(105, 219, 255), 12px, 12px, 0 50% 50%)
-		+ps(absolute, 5px, 30px)
+		+bx(rgb(105, 219, 255), 1.2em, 1.2em, 0 50% 50%)
+		+ps(absolute, 0.5em, 3em)
 		+rotate(35deg)
-		+box-shadow(inset 0 0 0 2px rgba(1, 67, 85, .25))
-
+		+box-shadow(inset 0 0 0 0.2em rgba(1, 67, 85, .25))
+		
 //DISPLEASED EYES
 //=============
 .eye.displeased
-	width: 20px
-	height: 20px
+	width: 2em
+	height: 2em
 	&:before
 		content: ''
 		display: block
-		+bx($skin-color,60px, 20px, 20px)
-		+ps(absolute, -20px, -10px)
-		+box-shadow(inset -5px -4px 0px 0px #000)
+		+bx($skin-color, 6em, 2em, 2em)
+		+ps(absolute, -2em, -1em)
+		+box-shadow(inset -0.5em -0.4em 0px 0px #000)
 		+rotate(15deg)
 	&:after
-		width: 5px
-		height: 5px	
+		width: 0.5em
+		height: 0.5em
 
 .eye.displeased.right
-	left: 210px
+	left: 21em
 	&:before
-		+box-shadow(inset 5px -4px 0px 0px #000)
-		//left: -20px
+		+box-shadow(inset 0.5em -0.4em 0px 0px #000)
+		//left: -2em
 		+rotate(-15deg)
 
 //SLEEPY EYES
 //=============
 .eye.sleepy
-	+bx(#000, 55px, 2px, 10px)
-	left: 30px
+	+bx(#000, 5.5em, 0.2em, 1em)
+	left: 3em
 	+rotate(5deg)
 	&:before,
 	&:after
 		display: none
 
 .eye.sleepy.right
-	left: 205px
+	left: 20.5em
 	+rotate(-5deg)
+	
+//LONG EYELASHES 
+//=============
+.eye.eye-lashes
+	+ps(absolute, 20%, 70%)
+	+bx(rgb(0, 0, 0), 3em, 3em)
+	&:after
+		+ps(absolute, -1em, 0px)
+		+bx(rgb(0, 0, 0), 4em, 1.5em)
+		+border-radius(50% 5em)
+		z-index: -3
+
+.eye.eye-lashes.right
+	+ps(absolute, 70%, 70%)
+	&:after
+		+ps(absolute, 0px, 0px)
+		+border-radius(5em 50%)
+
+
+
+
+		
+
+
+
+
 
 
 

@@ -1,18 +1,27 @@
-# Kawaii-css v.001
+# Kawaii-css
 
 Kawaii-CSS is a css framework for building "Kawaii cartoons". To explore the creative possibilities of CSS. An approach from a different angle that can hopefully generate more interest from novice developers.
 
 There are no buttons, no forms, no font-sizes, no layouts, no grids, no responsive design media querys. Nothing that would help you build a website. Still interested?
 
-##What is a Kawaii Cartoon?
+## What's new in v0.0.2?
+
+The focus of this minor release was to convert all px to em so that the framework is responsive-ish.
+
+- You can now control the size of the Kawaii character by changing the font size. The default is 10px.
+- Twitter Bootstrap has been used in the example page for responsive layout, but it is not required when using Kawaii framework.
+- Since the example is done with Bootstrap, you can be sure that Kawaii framework works with it.
+- In the example, you can compare the new responsive Kawaii versus v0.0.1.
+
+## What is a Kawaii Cartoon?
 "Kawaii" means "cute" in Japanese. Kawaii cartoons are painfully cute cartoon characters usually composed of simple shapes.*http://en.wikipedia.org/wiki/Kawaii.
 
-##What can you do with this framework?
+## What can you do with this framework?
 Make cartoons. Switch out the eye, mouth, hair and costume classes to create your kawaii character. 
 
 Customizing them is just as easy. Just place your CSS after the kawaii.css file and tweak to your heart's content. 
 
-##Contribute
+## Contribute
 If you come up with something really cool. Let me know. Maybe we can include it in the next version of kawaii-css
 
 Kawaii-css (A.K.A. 'Cute-strap') is a Silly, inventive, and playful fun-end framework for faster and easier kawaii cartoon development, created and maintained by [Anthony Calzadilla](http://twitter.com/clzd).
@@ -33,6 +42,11 @@ To get started, checkout [http://clzd.me/kawaii-css](http://clzd.me/kawaii-css)
 ## Community
 
 ## Contributing
+
+**Andrews Ang**
+
++ [https://twitter.com/kongnir](https://twitter.com/kongnir)
++ [https://github.com/kongnir/kawaii.css](https://github.com/kongnir/kawaii.css)
 
 ## Author
 

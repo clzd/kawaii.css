@@ -1,18 +1,75 @@
 // import compass
 @import compass/css3
 
-//kawaii.css
-//load up base and default first
-@import partials/kawaii-base
-@import partials/human-default
-@import partials/animal-default
-//load up everythign else
-@import partials/hairstyles
-@import partials/eyes
-@import partials/mouths
-@import partials/clothes
-@import partials/bunny
-@import partials/cat
-@import partials/pig
-@import partials/panda
+// Reset the box-sizing, neccessary when using normalized css
 
+*,
+*:before,
+*:after
+	+box-sizing(border-box)
+
+// Work with 10px for easier conversion to em from previous px
+$font-size: 10px
+$diameter: 30em !default
+$hat_diameter: $diameter + 2em !default
+$animal-brim: 50em !default
+
+@import partials/kawaii-base
+
+// All nested under this container, so anything outside will not be affected
+.kawaii
+	font-size: $font-size
+	// characters shouldnt be taller that 1.5 heads to retain cuteness
+	// additional 4em for the shoe
+	+bx(transparent, $hat_diameter, $diameter + $diameter / 2 + 4em)
+	position: relative
+	margin: 0 auto
+	//float: left
+	z-index: 1
+	
+	// Not using _kawaii-bass.sass
+	// Maybe can consider removing it?
+	
+	// _human-default.sass
+	//_______________________
+	@import partials/human-default
+	
+	// _animal-default.sass
+	//_______________________
+	@import partials/animal-default
+	
+	// _clothes.sass
+	//_______________________
+	@import partials/clothes
+		
+	// _hairstyles.sass
+	//_______________________
+	@import partials/hairstyles
+	
+	// _eyes.sass
+	//_______________________
+	@import partials/eyes
+	
+	// _mouths.sass
+	//_______________________
+	@import partials/mouths
+	
+	// _cheeks.sass
+	//_______________________
+	@import partials/cheeks
+	
+	// _bunny.sass
+	//_______________________
+	@import partials/bunny
+	
+	// _cat.sass
+	//_______________________
+	@import partials/cat
+	
+	// _pig.sass
+	//_______________________
+	@import partials/pig
+	
+	// _panda.sass
+	//_______________________
+	@import partials/panda

@@ -1,0 +1,2537 @@
+/* line 2, ../sass/partials/_human-default.sass */
+.kawaii-old {
+  background-color: transparent;
+  width: 320px;
+  height: 450px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  position: relative;
+  margin: 0 auto;
+  z-index: 1;
+}
+
+/* line 12, ../sass/partials/_human-default.sass */
+.head {
+  position: relative;
+  z-index: 1;
+}
+
+/* line 16, ../sass/partials/_human-default.sass */
+.skull {
+  position: absolute;
+  left: 50%;
+  top: 8%;
+  margin-left: -150px;
+  z-index: -1;
+  background-color: #ffdfc4;
+  width: 300px;
+  height: 300px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+}
+
+/* line 22, ../sass/partials/_human-default.sass */
+.face {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 0%;
+  background-color: peach;
+  width: 300px;
+  height: 300px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  margin-left: -150px;
+  overflow: hidden;
+  border: 6px solid black;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 31, ../sass/partials/_human-default.sass */
+.eye {
+  background-color: black;
+  width: 30px;
+  height: 30px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  position: absolute;
+  left: 20%;
+  top: 73%;
+}
+/* line 36, ../sass/partials/_human-default.sass */
+.eye:before, .eye:after {
+  content: " ";
+  display: block;
+  background-color: white;
+  width: 5px;
+  height: 5px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 20%;
+}
+/* line 43, ../sass/partials/_human-default.sass */
+.eye:after {
+  background-color: white;
+  width: 9px;
+  height: 9px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  position: absolute;
+  left: 30%;
+  top: 45%;
+}
+
+/* line 47, ../sass/partials/_human-default.sass */
+.eye.right {
+  position: absolute;
+  left: auto;
+  top: 73%;
+  right: 20%;
+}
+
+/* line 51, ../sass/partials/_human-default.sass */
+.mouth {
+  position: absolute;
+  left: 50%;
+  top: 80%;
+  background-color: transparent;
+  width: 50px;
+  height: 25px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  border-bottom: 7px solid pink;
+  margin-left: -25px;
+}
+
+/* line 60, ../sass/partials/_human-default.sass */
+.cheeks {
+  background-color: pink;
+  width: 10%;
+  height: 10%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  position: absolute;
+  left: 15%;
+  top: 80%;
+}
+
+/* line 64, ../sass/partials/_human-default.sass */
+.cheeks.right {
+  left: auto;
+  right: 15%;
+}
+
+/* line 70, ../sass/partials/_human-default.sass */
+.torso {
+  background-color: transparent;
+  width: 80px;
+  height: auto;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  position: absolute;
+  left: 50%;
+  top: 270px;
+  margin-left: -40px;
+}
+
+/* line 77, ../sass/partials/_human-default.sass */
+.arm {
+  background-color: white;
+  width: 50px;
+  height: 150px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  border-radius: 50px;
+  position: absolute;
+  left: 0px;
+  top: 0%;
+  -webkit-transform-origin: 50% 0%;
+  -moz-transform-origin: 50% 0%;
+  -ms-transform-origin: 50% 0%;
+  -o-transform-origin: 50% 0%;
+  transform-origin: 50% 0%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-shadow: inset 0px -60px 0 -30px #ffdfc4, inset 0px -68px 0 -30px black, inset 0px -75px 0 -30px white, inset 0px -80px 0 -30px #8fc1f8;
+  -moz-box-shadow: inset 0px -60px 0 -30px #ffdfc4, inset 0px -68px 0 -30px black, inset 0px -75px 0 -30px white, inset 0px -80px 0 -30px #8fc1f8;
+  box-shadow: inset 0px -60px 0 -30px #ffdfc4, inset 0px -68px 0 -30px black, inset 0px -75px 0 -30px white, inset 0px -80px 0 -30px #8fc1f8;
+  -webkit-transform: rotate(25deg);
+  -moz-transform: rotate(25deg);
+  -ms-transform: rotate(25deg);
+  -o-transform: rotate(25deg);
+  transform: rotate(25deg);
+  border: 6px solid;
+  z-index: -1;
+}
+
+/* line 87, ../sass/partials/_human-default.sass */
+.arm.right {
+  left: 32px;
+  -webkit-transform: rotate(-25deg);
+  -moz-transform: rotate(-25deg);
+  -ms-transform: rotate(-25deg);
+  -o-transform: rotate(-25deg);
+  transform: rotate(-25deg);
+}
+
+/* line 93, ../sass/partials/_human-default.sass */
+.leg {
+  background-color: #ffdfc4;
+  width: 50px;
+  height: 125px;
+  -webkit-border-radius: 120px;
+  -moz-border-radius: 120px;
+  -ms-border-radius: 120px;
+  -o-border-radius: 120px;
+  border-radius: 120px;
+  position: absolute;
+  left: -15px;
+  top: 90px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 6px solid black;
+  border-bottom-width: 20px;
+  -webkit-box-shadow: inset 0px -20px 0 0px white, inset 0px -24px 0 0px #8fc1f8, inset 0px -28px 0 0px white, inset 0px -35px 0 0px black;
+  -moz-box-shadow: inset 0px -20px 0 0px white, inset 0px -24px 0 0px #8fc1f8, inset 0px -28px 0 0px white, inset 0px -35px 0 0px black;
+  box-shadow: inset 0px -20px 0 0px white, inset 0px -24px 0 0px #8fc1f8, inset 0px -28px 0 0px white, inset 0px -35px 0 0px black;
+  z-index: -1;
+}
+
+/* line 102, ../sass/partials/_human-default.sass */
+.leg.right {
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  left: 45px;
+}
+
+/* line 2, ../sass/partials/_animal-default.sass */
+.animal-nose.bunny, .animal-nose.cat {
+  width: auto;
+  height: auto;
+  background-color: transparent;
+  top: 31%;
+  left: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+  border-bottom: 26px solid black;
+  border-left: 26px solid transparent;
+  border-right: 26px solid transparent;
+  margin-left: -20px;
+  z-index: 2;
+}
+/* line 15, ../sass/partials/_animal-default.sass */
+.animal-nose.bunny:before, .animal-nose.cat:before {
+  content: "";
+  display: block;
+  width: auto;
+  height: auto;
+  background-color: transparent;
+  position: absolute;
+  left: 50%;
+  top: 30px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  border-bottom: 14px solid pink;
+  border-left: 14px solid transparent;
+  border-right: 14px solid transparent;
+  margin-left: -14px;
+}
+/* line 27, ../sass/partials/_animal-default.sass */
+.animal-nose.bunny:after, .animal-nose.cat:after {
+  content: "";
+  display: block;
+  background-color: black;
+  width: 10px;
+  height: 25px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+}
+
+/* line 34, ../sass/partials/_animal-default.sass */
+.hat, .animal-head {
+  background-color: transparent;
+  width: 320px;
+  height: 320px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  z-index: 1;
+  position: relative;
+  display: block;
+  margin: 0 auto;
+}
+
+/* line 42, ../sass/partials/_animal-default.sass */
+.torso.animal-torso, .torso.animal-torso.panda {
+  background-color: transparent;
+  width: 80px;
+  height: auto;
+  -webkit-border-radius: 0%;
+  -moz-border-radius: 0%;
+  -ms-border-radius: 0%;
+  -o-border-radius: 0%;
+  border-radius: 0%;
+  position: absolute;
+  left: 50%;
+  top: 60%;
+  margin-left: -63px;
+  border-bottom: 100px solid black;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+}
+/* line 49, ../sass/partials/_animal-default.sass */
+.torso.animal-torso:before, .torso.animal-torso:after {
+  content: "";
+  background-color: white;
+  width: 90px;
+  height: 70px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 80px;
+  margin-left: -45px;
+  display: block;
+  border: none;
+}
+/* line 57, ../sass/partials/_animal-default.sass */
+.torso.animal-torso:after {
+  background-color: black;
+  width: 122px;
+  height: 120px;
+  -webkit-border-radius: 50% 50% 50px 50px;
+  -moz-border-radius: 50% 50% 50px 50px;
+  -ms-border-radius: 50% 50% 50px 50px;
+  -o-border-radius: 50% 50% 50px 50px;
+  border-radius: 50% 50% 50px 50px;
+  left: 50%;
+  top: 55px;
+  margin-left: -61px;
+  z-index: -1;
+}
+
+/* line 65, ../sass/partials/_animal-default.sass */
+.torso.animal-torso.bunny:before, .torso.animal-torso.cat:before, .torso.animal-torso.pig:before {
+  width: 110px;
+  height: 136px;
+  margin-left: -55px;
+  top: 30px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
+  border-radius: 40px;
+}
+
+/* line 85, ../sass/partials/_animal-default.sass */
+.animal-bg-wrap {
+  background-color: transparent;
+  width: 320px;
+  height: 320px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  overflow: hidden;
+  position: absolute;
+}
+
+/* line 91, ../sass/partials/_animal-default.sass */
+.animal-bg {
+  width: 100%;
+  height: 66.66667%;
+  margin-top: 0px;
+  position: absolute;
+  overflow: hidden;
+}
+/* line 99, ../sass/partials/_animal-default.sass */
+.animal-bg:before {
+  content: "";
+  background-color: transparent;
+  width: 100%;
+  height: 320px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  -webkit-box-shadow: inset 0px 0px 0px 6px black;
+  -moz-box-shadow: inset 0px 0px 0px 6px black;
+  box-shadow: inset 0px 0px 0px 6px black;
+  z-index: 10;
+}
+/* line 108, ../sass/partials/_animal-default.sass */
+.animal-bg:after {
+  content: "";
+  display: block;
+  background-color: transparent;
+  width: 500px;
+  height: 250px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  margin-left: -250px;
+  -webkit-box-shadow: inset 0px 170px 0px white, inset 0px 180px 0px black;
+  -moz-box-shadow: inset 0px 170px 0px white, inset 0px 180px 0px black;
+  box-shadow: inset 0px 170px 0px white, inset 0px 180px 0px black;
+}
+
+/* line 118, ../sass/partials/_animal-default.sass */
+.animal-ear {
+  background-color: #404040;
+  width: 50%;
+  height: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  position: absolute;
+  left: -20%;
+  top: 0px;
+  z-index: -1;
+  -webkit-box-shadow: inset 0px 0px 0px 35px black;
+  -moz-box-shadow: inset 0px 0px 0px 35px black;
+  box-shadow: inset 0px 0px 0px 35px black;
+}
+
+/* line 124, ../sass/partials/_animal-default.sass */
+.animal-ear.right {
+  left: auto;
+  right: -20%;
+}
+
+/* line 128, ../sass/partials/_animal-default.sass */
+.animal-eye-socket {
+  background-color: black;
+  width: 26.66667%;
+  height: 33.33333%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  position: absolute;
+  left: 13%;
+  top: 15%;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  z-index: 2;
+}
+
+/* line 134, ../sass/partials/_animal-default.sass */
+.animal-eye-socket.right {
+  position: absolute;
+  left: auto;
+  top: 15%;
+  right: 13%;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+/* line 139, ../sass/partials/_animal-default.sass */
+.animal-eye-ball {
+  position: absolute;
+  left: 50%;
+  top: 25%;
+  background-color: white;
+  width: 40px;
+  height: 40px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  margin-left: -15px;
+}
+
+/* line 145, ../sass/partials/_animal-default.sass */
+.animal-eye-ball.right {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* line 148, ../sass/partials/_animal-default.sass */
+.animal-eye-pupil {
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  background-color: black;
+  width: 20px;
+  height: 20px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  margin-left: -10px;
+}
+/* line 153, ../sass/partials/_animal-default.sass */
+.animal-eye-pupil:before {
+  content: " ";
+  display: block;
+  background-color: white;
+  width: 5px;
+  height: 5px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 20%;
+}
+
+/* line 159, ../sass/partials/_animal-default.sass */
+.animal-nose {
+  background-color: #222222;
+  width: 11%;
+  height: 9%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 31%;
+  margin-left: -5.5%;
+  z-index: 2;
+}
+
+/* line 165, ../sass/partials/_animal-default.sass */
+.animal-mouth {
+  background-color: transparent;
+  width: 16.66667%;
+  height: 8.33333%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  -webkit-box-shadow: -5px 10px 0px -5px black;
+  -moz-box-shadow: -5px 10px 0px -5px black;
+  box-shadow: -5px 10px 0px -5px black;
+  margin-left: -8.33333%;
+  z-index: 2;
+}
+
+/* line 180, ../sass/partials/_animal-default.sass */
+.arm.animal-arm {
+  background-color: white;
+  width: 50%;
+  height: 150px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  border-radius: 50px;
+  position: absolute;
+  left: 0px;
+  top: 0%;
+  -webkit-transform-origin: 50% 0%;
+  -moz-transform-origin: 50% 0%;
+  -ms-transform-origin: 50% 0%;
+  -o-transform-origin: 50% 0%;
+  transform-origin: 50% 0%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  -webkit-transform: rotate(25deg);
+  -moz-transform: rotate(25deg);
+  -ms-transform: rotate(25deg);
+  -o-transform: rotate(25deg);
+  transform: rotate(25deg);
+  border: 6px solid;
+  z-index: -1;
+}
+
+/* line 190, ../sass/partials/_animal-default.sass */
+.arm.animal-arm.right {
+  left: auto;
+  right: 0;
+  -webkit-transform: rotate(-25deg);
+  -moz-transform: rotate(-25deg);
+  -ms-transform: rotate(-25deg);
+  -o-transform: rotate(-25deg);
+  transform: rotate(-25deg);
+}
+
+/* line 197, ../sass/partials/_animal-default.sass */
+.arm.animal-arm.costume {
+  background-color: #ffdfc4;
+}
+
+/* line 205, ../sass/partials/_animal-default.sass */
+.leg.animal-leg {
+  background-color: white;
+  width: 50px;
+  height: 125px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+  border-radius: 100px;
+  position: absolute;
+  left: -10px;
+  top: 90px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transform: rotate(15deg);
+  -moz-transform: rotate(15deg);
+  -ms-transform: rotate(15deg);
+  -o-transform: rotate(15deg);
+  transform: rotate(15deg);
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  z-index: -1;
+  border: 6px solid black;
+  border-bottom-width: 10px;
+}
+/* line 214, ../sass/partials/_animal-default.sass */
+.leg.animal-leg:before, .leg.animal-leg:after {
+  display: none;
+}
+
+/* line 218, ../sass/partials/_animal-default.sass */
+.leg.animal-leg.right {
+  -webkit-transform: rotate(-15deg);
+  -moz-transform: rotate(-15deg);
+  -ms-transform: rotate(-15deg);
+  -o-transform: rotate(-15deg);
+  transform: rotate(-15deg);
+  left: 40px;
+}
+
+/* line 224, ../sass/partials/_animal-default.sass */
+.leg.animal-leg.costume {
+  background-color: #ffdfc4;
+  border-bottom-width: 20px;
+}
+/* line 227, ../sass/partials/_animal-default.sass */
+.leg.animal-leg.costume:before, .leg.animal-leg.costume:after {
+  content: " ";
+  background-color: transparent;
+  width: 44px;
+  height: 25px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 90%;
+  border-top: 5px solid black;
+  margin-left: -22px;
+  bottom: 0;
+  display: block;
+  z-index: 1;
+}
+
+/* line 245, ../sass/partials/_animal-default.sass */
+.animal-head {
+  position: relative;
+  top: 50px;
+}
+
+/* line 250, ../sass/partials/_animal-default.sass */
+.animal-head-bg {
+  background-color: white;
+  width: 100%;
+  height: 90%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  border: 7px solid black;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 257, ../sass/partials/_animal-default.sass */
+.animal-head.costume {
+  width: 400px;
+  height: 380px;
+  top: 10px;
+  margin-left: -200px;
+  left: 50%;
+}
+
+/* line 264, ../sass/partials/_animal-default.sass */
+.skull.costume {
+  z-index: 3;
+}
+
+/* line 3, ../sass/partials/_hairstyles.sass */
+.hair {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  border-top: 8px solid black;
+}
+
+/* line 11, ../sass/partials/_hairstyles.sass */
+.hair-part-front {
+  background-color: red;
+  width: 500px;
+  height: 250px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  position: absolute;
+  left: 0%;
+  top: -15%;
+  margin-left: 0;
+  -webkit-box-shadow: 0px 10px 0px -5px maroon, inset -50px 0px 0px 20px rgba(128, 0, 0, 0.25);
+  -moz-box-shadow: 0px 10px 0px -5px maroon, inset -50px 0px 0px 20px rgba(128, 0, 0, 0.25);
+  box-shadow: 0px 10px 0px -5px maroon, inset -50px 0px 0px 20px rgba(128, 0, 0, 0.25);
+}
+
+/* line 18, ../sass/partials/_hairstyles.sass */
+.hair-part-back {
+  background-color: red;
+  width: 500px;
+  height: 250px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 10px 0px -5px maroon;
+  -moz-box-shadow: 0px 10px 0px -5px maroon;
+  box-shadow: 0px 10px 0px -5px maroon;
+  position: absolute;
+  left: -110%;
+  top: -15%;
+  z-index: -1;
+}
+
+/* line 25, ../sass/partials/_hairstyles.sass */
+.pony-tail {
+  background-color: transparent;
+  width: 100%;
+  height: 150px;
+  -webkit-border-radius: 0%;
+  -moz-border-radius: 0%;
+  -ms-border-radius: 0%;
+  -o-border-radius: 0%;
+  border-radius: 0%;
+  position: absolute;
+  left: 0;
+  bottom: 150px;
+  z-index: -20;
+}
+
+/* line 32, ../sass/partials/_hairstyles.sass */
+.pony-tail-left,
+.pony-tail-right {
+  background-color: red;
+  width: 80px;
+  height: 80px;
+  -webkit-border-radius: 50% 10px;
+  -moz-border-radius: 50% 10px;
+  -ms-border-radius: 50% 10px;
+  -o-border-radius: 50% 10px;
+  border-radius: 50% 10px;
+  position: absolute;
+  left: 0px;
+  top: 90px;
+  -webkit-transform-origin: 0% 0%;
+  -moz-transform-origin: 0% 0%;
+  -ms-transform-origin: 0% 0%;
+  -o-transform-origin: 0% 0%;
+  transform-origin: 0% 0%;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-box-shadow: inset 0px 0px 0 5px maroon;
+  -moz-box-shadow: inset 0px 0px 0 5px maroon;
+  box-shadow: inset 0px 0px 0 5px maroon;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+/* line 41, ../sass/partials/_hairstyles.sass */
+.pony-tail-right {
+  position: absolute;
+  left: 75%;
+  top: 90px;
+  -webkit-border-radius: 10px 50%;
+  -moz-border-radius: 10px 50%;
+  -ms-border-radius: 10px 50%;
+  -o-border-radius: 10px 50%;
+  border-radius: 10px 50%;
+  -webkit-transform-origin: 100% 0%;
+  -moz-transform-origin: 100% 0%;
+  -ms-transform-origin: 100% 0%;
+  -o-transform-origin: 100% 0%;
+  transform-origin: 100% 0%;
+  -webkit-transform: rotate(5deg);
+  -moz-transform: rotate(5deg);
+  -ms-transform: rotate(5deg);
+  -o-transform: rotate(5deg);
+  transform: rotate(5deg);
+}
+
+/* line 49, ../sass/partials/_hairstyles.sass */
+.pony-tail-left.top,
+.pony-tail-right.top {
+  top: -120px;
+  left: 30px;
+  -webkit-transform-origin: 50% 0 0;
+  -moz-transform-origin: 50% 0 0;
+  -ms-transform-origin: 50% 0 0;
+  -o-transform-origin: 50% 0 0;
+  transform-origin: 50% 0 0;
+  -webkit-border-radius: 50% 50% 50% 5px;
+  -moz-border-radius: 50% 50% 50% 5px;
+  -ms-border-radius: 50% 50% 50% 5px;
+  -o-border-radius: 50% 50% 50% 5px;
+  border-radius: 50% 50% 50% 5px;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+/* line 57, ../sass/partials/_hairstyles.sass */
+.pony-tail-right.top {
+  -webkit-border-radius: 5px 50% 50% 50%;
+  -moz-border-radius: 5px 50% 50% 50%;
+  -ms-border-radius: 5px 50% 50% 50%;
+  -o-border-radius: 5px 50% 50% 50%;
+  border-radius: 5px 50% 50% 50%;
+  left: auto;
+  right: -40px;
+}
+
+/* line 65, ../sass/partials/_hairstyles.sass */
+.hair-part-front.concave {
+  background-color: transparent;
+  width: 500px;
+  height: 250px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  position: absolute;
+  left: -30%;
+  top: 40%;
+  -webkit-box-shadow: inset -45px 0px 0px 45px red, inset -50px 0px 0px 50px maroon;
+  -moz-box-shadow: inset -45px 0px 0px 45px red, inset -50px 0px 0px 50px maroon;
+  box-shadow: inset -45px 0px 0px 45px red, inset -50px 0px 0px 50px maroon;
+  -webkit-transform: rotate(15deg);
+  -moz-transform: rotate(15deg);
+  -ms-transform: rotate(15deg);
+  -o-transform: rotate(15deg);
+  transform: rotate(15deg);
+}
+
+/* line 72, ../sass/partials/_hairstyles.sass */
+.hair-part-back.concave {
+  background-color: transparent;
+  width: 500px;
+  height: 300px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  position: absolute;
+  left: -45%;
+  top: 40%;
+  -webkit-box-shadow: inset 45px 0px 0px 45px red, inset 50px 0px 0px 50px maroon;
+  -moz-box-shadow: inset 45px 0px 0px 45px red, inset 50px 0px 0px 50px maroon;
+  box-shadow: inset 45px 0px 0px 45px red, inset 50px 0px 0px 50px maroon;
+  -webkit-transform: rotate(-35deg);
+  -moz-transform: rotate(-35deg);
+  -ms-transform: rotate(-35deg);
+  -o-transform: rotate(-35deg);
+  transform: rotate(-35deg);
+}
+
+/* line 79, ../sass/partials/_hairstyles.sass */
+.pony-tail-left.straight,
+.pony-tail-right.straight {
+  background-color: red;
+  width: 150px;
+  height: 150px;
+  -webkit-border-radius: 0%;
+  -moz-border-radius: 0%;
+  -ms-border-radius: 0%;
+  -o-border-radius: 0%;
+  border-radius: 0%;
+  position: absolute;
+  left: 10px;
+  top: 0px;
+  -webkit-transform-origin: 0% 0%;
+  -moz-transform-origin: 0% 0%;
+  -ms-transform-origin: 0% 0%;
+  -o-transform-origin: 0% 0%;
+  transform-origin: 0% 0%;
+  -webkit-transform: rotate(-5deg);
+  -moz-transform: rotate(-5deg);
+  -ms-transform: rotate(-5deg);
+  -o-transform: rotate(-5deg);
+  transform: rotate(-5deg);
+  -webkit-box-shadow: inset 0px 0px 0 5px maroon;
+  -moz-box-shadow: inset 0px 0px 0 5px maroon;
+  box-shadow: inset 0px 0px 0 5px maroon;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+/* line 89, ../sass/partials/_hairstyles.sass */
+.pony-tail-right.straight {
+  position: absolute;
+  left: 100%;
+  top: 0px;
+  margin-left: -160px;
+  -webkit-transform-origin: 100% 0%;
+  -moz-transform-origin: 100% 0%;
+  -ms-transform-origin: 100% 0%;
+  -o-transform-origin: 100% 0%;
+  transform-origin: 100% 0%;
+  -webkit-transform: rotate(5deg);
+  -moz-transform: rotate(5deg);
+  -ms-transform: rotate(5deg);
+  -o-transform: rotate(5deg);
+  transform: rotate(5deg);
+}
+
+/* line 96, ../sass/partials/_hairstyles.sass */
+.hair-part-front.skater {
+  width: 350px;
+  height: 225px;
+  left: 0%;
+  top: -25px;
+  border: 6px solid black;
+  border-left: none;
+  -webkit-transform-origin: 0 50% 0;
+  -moz-transform-origin: 0 50% 0;
+  -ms-transform-origin: 0 50% 0;
+  -o-transform-origin: 0 50% 0;
+  transform-origin: 0 50% 0;
+  -webkit-transform: rotate(6deg);
+  -moz-transform: rotate(6deg);
+  -ms-transform: rotate(6deg);
+  -o-transform: rotate(6deg);
+  transform: rotate(6deg);
+  -webkit-border-radius: 200px 300px 0 130px;
+  -moz-border-radius: 200px 300px 0 130px;
+  -ms-border-radius: 200px 300px 0 130px;
+  -o-border-radius: 200px 300px 0 130px;
+  border-radius: 200px 300px 0 130px;
+  -webkit-box-shadow: inset -5px -5px 0 0px rgba(128, 0, 0, 0.25), -15px 30px 0 -24px rgba(128, 0, 0, 0.15);
+  -moz-box-shadow: inset -5px -5px 0 0px rgba(128, 0, 0, 0.25), -15px 30px 0 -24px rgba(128, 0, 0, 0.15);
+  box-shadow: inset -5px -5px 0 0px rgba(128, 0, 0, 0.25), -15px 30px 0 -24px rgba(128, 0, 0, 0.15);
+}
+
+/* line 109, ../sass/partials/_hairstyles.sass */
+.hair-part-back.skater {
+  width: 200px;
+  height: 250px;
+  border: 6px solid black;
+  left: -10px;
+  top: 10px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+/* line 118, ../sass/partials/_hairstyles.sass */
+.hair-part-front.skater.puff {
+  width: 360px;
+  height: 240px;
+  left: 16px;
+  top: -10px;
+  border-left: 1px solid red;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+}
+
+/* line 127, ../sass/partials/_hairstyles.sass */
+.hair-part-back.skater.puff {
+  width: 260px;
+  height: 210px;
+  border: 6px solid black;
+  left: -10px;
+  top: 20px;
+}
+
+/* line 135, ../sass/partials/_hairstyles.sass */
+.hair-part-front.mrt {
+  width: 100px;
+  height: 200px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  border-radius: 50px;
+  left: 50%;
+  margin-left: -50px;
+  top: -50px;
+  -webkit-box-shadow: inset -5px -5px 0 0px rgba(128, 0, 0, 0.25), 0px 30px 0 -15px rgba(128, 0, 0, 0.15);
+  -moz-box-shadow: inset -5px -5px 0 0px rgba(128, 0, 0, 0.25), 0px 30px 0 -15px rgba(128, 0, 0, 0.15);
+  box-shadow: inset -5px -5px 0 0px rgba(128, 0, 0, 0.25), 0px 30px 0 -15px rgba(128, 0, 0, 0.15);
+}
+
+/* line 144, ../sass/partials/_hairstyles.sass */
+.hair-part-back.mrt {
+  width: 200px;
+  height: 175px;
+  -webkit-border-radius: 70px;
+  -moz-border-radius: 70px;
+  -ms-border-radius: 70px;
+  -o-border-radius: 70px;
+  border-radius: 70px;
+  left: 0px;
+  top: 20px;
+}
+/* line 150, ../sass/partials/_hairstyles.sass */
+.hair-part-back.mrt:after {
+  content: "";
+  display: block;
+  width: 200px;
+  height: 175px;
+  -webkit-border-radius: 70px;
+  -moz-border-radius: 70px;
+  -ms-border-radius: 70px;
+  -o-border-radius: 70px;
+  border-radius: 70px;
+  left: auto;
+  right: -120px;
+  background: red;
+  position: absolute;
+}
+
+/* line 162, ../sass/partials/_hairstyles.sass */
+.hair-part-front.puff {
+  background-color: red;
+  width: 350px;
+  height: 350px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  position: absolute;
+  left: 150px;
+  top: -150px;
+}
+
+/* line 166, ../sass/partials/_hairstyles.sass */
+.hair-part-back.puff {
+  background-color: red;
+  width: 500px;
+  height: 250px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  position: absolute;
+  left: -250px;
+  top: -70px;
+}
+
+/* line 170, ../sass/partials/_hairstyles.sass */
+.pony-tail-left.puff,
+.pony-tail-right.puff {
+  background-color: red;
+  width: 100px;
+  height: 100px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  position: absolute;
+  left: -35px;
+  top: 70px;
+}
+
+/* line 175, ../sass/partials/_hairstyles.sass */
+.pony-tail-right.puff {
+  left: 250px;
+}
+
+/* line 179, ../sass/partials/_hairstyles.sass */
+.pony-tail-left.puff.top,
+.pony-tail-right.puff.top {
+  top: -110px;
+  left: 10px;
+}
+
+/* line 184, ../sass/partials/_hairstyles.sass */
+.pony-tail-right.puff.top {
+  left: auto;
+  right: -85px;
+}
+
+/* line 190, ../sass/partials/_hairstyles.sass */
+.pony-tail.leia {
+  left: 0;
+  top: 0;
+}
+
+/* line 194, ../sass/partials/_hairstyles.sass */
+.pony-tail-left.leia,
+.pony-tail-right.leia {
+  background-color: red;
+  width: 110px;
+  height: 200px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  position: absolute;
+  left: -30px;
+  top: 60px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+/* line 200, ../sass/partials/_hairstyles.sass */
+.pony-tail-right.leia {
+  left: 240px;
+}
+
+/* line 6, ../sass/partials/_eyes.sass */
+.eye.eye-lashes {
+  position: absolute;
+  left: 20%;
+  top: 70%;
+  background-color: black;
+  width: 30px;
+  height: 30px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+}
+/* line 9, ../sass/partials/_eyes.sass */
+.eye.eye-lashes:after {
+  position: absolute;
+  left: -10px;
+  top: 0px;
+  background-color: black;
+  width: 40px;
+  height: 15px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-border-radius: 50% 50px;
+  -moz-border-radius: 50% 50px;
+  -ms-border-radius: 50% 50px;
+  -o-border-radius: 50% 50px;
+  border-radius: 50% 50px;
+  z-index: -3;
+}
+
+/* line 15, ../sass/partials/_eyes.sass */
+.eye.eye-lashes.right {
+  position: absolute;
+  left: 70%;
+  top: 70%;
+}
+/* line 17, ../sass/partials/_eyes.sass */
+.eye.eye-lashes.right:after {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  -webkit-border-radius: 50px 50%;
+  -moz-border-radius: 50px 50%;
+  -ms-border-radius: 50px 50%;
+  -o-border-radius: 50px 50%;
+  border-radius: 50px 50%;
+}
+
+/* line 23, ../sass/partials/_eyes.sass */
+.eye.amused {
+  height: 20px;
+  background-color: transparent;
+  -webkit-box-shadow: inset -2px 5px 0px 0px black;
+  -moz-box-shadow: inset -2px 5px 0px 0px black;
+  box-shadow: inset -2px 5px 0px 0px black;
+}
+/* line 27, ../sass/partials/_eyes.sass */
+.eye.amused:before, .eye.amused:after {
+  display: none;
+}
+
+/* line 31, ../sass/partials/_eyes.sass */
+.eye.amused.right {
+  -webkit-box-shadow: inset 2px 5px 0px 0px black;
+  -moz-box-shadow: inset 2px 5px 0px 0px black;
+  box-shadow: inset 2px 5px 0px 0px black;
+}
+
+/* line 36, ../sass/partials/_eyes.sass */
+.cheeks.amused {
+  left: 54px;
+  top: 220px;
+}
+
+/* line 40, ../sass/partials/_eyes.sass */
+.cheeks.amused.right {
+  left: 205px;
+}
+
+/* line 45, ../sass/partials/_eyes.sass */
+.eye.playful {
+  z-index: -5;
+}
+/* line 48, ../sass/partials/_eyes.sass */
+.eye.playful:before {
+  content: "";
+  display: block;
+  background-color: #ffdfc4;
+  width: 80px;
+  height: 20px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  position: absolute;
+  left: -20px;
+  top: 15px;
+}
+/* line 53, ../sass/partials/_eyes.sass */
+.eye.playful:after {
+  content: "";
+  display: block;
+  background-color: white;
+  width: 4px;
+  height: 4px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  position: absolute;
+  left: 7px;
+  top: 6px;
+}
+
+/* line 61, ../sass/partials/_eyes.sass */
+.eye.sad {
+  height: 25px;
+  -webkit-transform: rotate(-15deg);
+  -moz-transform: rotate(-15deg);
+  -ms-transform: rotate(-15deg);
+  -o-transform: rotate(-15deg);
+  transform: rotate(-15deg);
+}
+/* line 64, ../sass/partials/_eyes.sass */
+.eye.sad:before, .eye.sad:after {
+  display: none;
+}
+
+/* line 68, ../sass/partials/_eyes.sass */
+.eye.sad.right {
+  -webkit-transform: rotate(15deg);
+  -moz-transform: rotate(15deg);
+  -ms-transform: rotate(15deg);
+  -o-transform: rotate(15deg);
+  transform: rotate(15deg);
+}
+
+/* line 72, ../sass/partials/_eyes.sass */
+.eye.sad.tear:after {
+  content: "";
+  display: block;
+  background-color: #69dbff;
+  width: 12px;
+  height: 12px;
+  -webkit-border-radius: 0 50% 50%;
+  -moz-border-radius: 0 50% 50%;
+  -ms-border-radius: 0 50% 50%;
+  -o-border-radius: 0 50% 50%;
+  border-radius: 0 50% 50%;
+  position: absolute;
+  left: 5px;
+  top: 30px;
+  -webkit-transform: rotate(35deg);
+  -moz-transform: rotate(35deg);
+  -ms-transform: rotate(35deg);
+  -o-transform: rotate(35deg);
+  transform: rotate(35deg);
+  -webkit-box-shadow: inset 0 0 0 2px rgba(1, 67, 85, 0.25);
+  -moz-box-shadow: inset 0 0 0 2px rgba(1, 67, 85, 0.25);
+  box-shadow: inset 0 0 0 2px rgba(1, 67, 85, 0.25);
+}
+
+/* line 82, ../sass/partials/_eyes.sass */
+.eye.displeased {
+  width: 20px;
+  height: 20px;
+}
+/* line 85, ../sass/partials/_eyes.sass */
+.eye.displeased:before {
+  content: "";
+  display: block;
+  background-color: #ffdfc4;
+  width: 60px;
+  height: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  border-radius: 20px;
+  position: absolute;
+  left: -20px;
+  top: -10px;
+  -webkit-box-shadow: inset -5px -4px 0px 0px black;
+  -moz-box-shadow: inset -5px -4px 0px 0px black;
+  box-shadow: inset -5px -4px 0px 0px black;
+  -webkit-transform: rotate(15deg);
+  -moz-transform: rotate(15deg);
+  -ms-transform: rotate(15deg);
+  -o-transform: rotate(15deg);
+  transform: rotate(15deg);
+}
+/* line 92, ../sass/partials/_eyes.sass */
+.eye.displeased:after {
+  width: 5px;
+  height: 5px;
+}
+
+/* line 96, ../sass/partials/_eyes.sass */
+.eye.displeased.right {
+  left: 210px;
+}
+/* line 98, ../sass/partials/_eyes.sass */
+.eye.displeased.right:before {
+  -webkit-box-shadow: inset 5px -4px 0px 0px black;
+  -moz-box-shadow: inset 5px -4px 0px 0px black;
+  box-shadow: inset 5px -4px 0px 0px black;
+  -webkit-transform: rotate(-15deg);
+  -moz-transform: rotate(-15deg);
+  -ms-transform: rotate(-15deg);
+  -o-transform: rotate(-15deg);
+  transform: rotate(-15deg);
+}
+
+/* line 105, ../sass/partials/_eyes.sass */
+.eye.sleepy {
+  background-color: black;
+  width: 55px;
+  height: 2px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  left: 30px;
+  -webkit-transform: rotate(5deg);
+  -moz-transform: rotate(5deg);
+  -ms-transform: rotate(5deg);
+  -o-transform: rotate(5deg);
+  transform: rotate(5deg);
+}
+/* line 109, ../sass/partials/_eyes.sass */
+.eye.sleepy:before, .eye.sleepy:after {
+  display: none;
+}
+
+/* line 113, ../sass/partials/_eyes.sass */
+.eye.sleepy.right {
+  left: 205px;
+  -webkit-transform: rotate(-5deg);
+  -moz-transform: rotate(-5deg);
+  -ms-transform: rotate(-5deg);
+  -o-transform: rotate(-5deg);
+  transform: rotate(-5deg);
+}
+
+/* line 6, ../sass/partials/_mouths.sass */
+.heart-mouth {
+  position: absolute;
+  left: 50%;
+  top: 85%;
+  border: none;
+  margin-left: -8px;
+}
+/* line 10, ../sass/partials/_mouths.sass */
+.heart-mouth:before, .heart-mouth:after {
+  content: " ";
+  display: block;
+  background-color: pink;
+  width: 15px;
+  height: 25px;
+  -webkit-border-radius: 50px 50px 0 0;
+  -moz-border-radius: 50px 50px 0 0;
+  -ms-border-radius: 50px 50px 0 0;
+  -o-border-radius: 50px 50px 0 0;
+  border-radius: 50px 50px 0 0;
+  position: absolute;
+  left: -8px;
+  top: 0;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-transform-origin: 0 100% 50%;
+  -moz-transform-origin: 0 100% 50%;
+  -ms-transform-origin: 0 100% 50%;
+  -o-transform-origin: 0 100% 50%;
+  transform-origin: 0 100% 50%;
+}
+/* line 18, ../sass/partials/_mouths.sass */
+.heart-mouth:after {
+  position: absolute;
+  left: 0px;
+  top: 0;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transform-origin: 100% 100% 50%;
+  -moz-transform-origin: 100% 100% 50%;
+  -ms-transform-origin: 100% 100% 50%;
+  -o-transform-origin: 100% 100% 50%;
+  transform-origin: 100% 100% 50%;
+}
+
+/* line 25, ../sass/partials/_mouths.sass */
+.mouth.amused {
+  border-bottom: 15px solid #f5f2f2;
+  width: 80px;
+  height: 65px;
+  top: 190px;
+  position: relative;
+  margin-left: -35px;
+}
+/* line 34, ../sass/partials/_mouths.sass */
+.mouth.amused:before {
+  content: "";
+  display: block;
+  background-color: #ffdfc4;
+  width: 90px;
+  height: 50px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  left: -5px;
+  top: 10px;
+  position: relative;
+  z-index: 2;
+}
+/* line 42, ../sass/partials/_mouths.sass */
+.mouth.amused:after {
+  content: "";
+  display: block;
+  background-color: transparent;
+  width: 80px;
+  height: 65px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  border-bottom: 40px solid black;
+  top: 0;
+  z-index: -1;
+  border-bottom: 30px solid black;
+  top: -7px;
+  position: absolute;
+  z-index: -1;
+}
+
+/* line 56, ../sass/partials/_mouths.sass */
+.mouth.playful {
+  background-color: #ffdfc4;
+  border-color: black;
+  width: 65px;
+  margin-left: -32px;
+}
+/* line 61, ../sass/partials/_mouths.sass */
+.mouth.playful:before {
+  content: "";
+  display: block;
+  background-color: #ffdfc4;
+  width: 75px;
+  height: 30px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  position: absolute;
+  left: -5px;
+  top: -5px;
+}
+/* line 66, ../sass/partials/_mouths.sass */
+.mouth.playful:after {
+  content: "";
+  display: block;
+  background-color: red;
+  width: 25px;
+  height: 40px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  border-radius: 25px;
+  position: absolute;
+  left: 25px;
+  top: 15px;
+  -webkit-transform-origin: 50% 0 0;
+  -moz-transform-origin: 50% 0 0;
+  -ms-transform-origin: 50% 0 0;
+  -o-transform-origin: 50% 0 0;
+  transform-origin: 50% 0 0;
+  -webkit-transform: rotate(-30deg);
+  -moz-transform: rotate(-30deg);
+  -ms-transform: rotate(-30deg);
+  -o-transform: rotate(-30deg);
+  transform: rotate(-30deg);
+  z-index: -1;
+  -webkit-box-shadow: inset 0px 0px 0px 3px black;
+  -moz-box-shadow: inset 0px 0px 0px 3px black;
+  box-shadow: inset 0px 0px 0px 3px black;
+}
+
+/* line 78, ../sass/partials/_mouths.sass */
+.mouth.sad,
+.mouth.displeased {
+  border-top: 7px solid black;
+  border-bottom: none;
+  top: 250px;
+}
+/* line 83, ../sass/partials/_mouths.sass */
+.mouth.sad:after,
+.mouth.displeased:after {
+  content: "";
+  display: block;
+  background-color: #ffdfc4;
+  width: 60px;
+  height: 30px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  position: absolute;
+  left: -5px;
+  top: 0px;
+}
+
+/* line 91, ../sass/partials/_mouths.sass */
+.mouth.displeased {
+  border-top: 5px solid black;
+  width: 70px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  border-radius: 50px;
+  left: 135px;
+}
+/* line 96, ../sass/partials/_mouths.sass */
+.mouth.displeased:after {
+  width: 80px;
+}
+
+/* line 102, ../sass/partials/_mouths.sass */
+.mouth.sleepy {
+  background-color: black;
+  width: 20px;
+  height: 20px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  border: none;
+  top: 250px;
+  margin-left: -5px;
+}
+/* line 107, ../sass/partials/_mouths.sass */
+.mouth.sleepy:before, .mouth.sleepy:after {
+  display: none;
+}
+
+/* line 1, ../sass/partials/_clothes.sass */
+.shirt {
+  background-color: transparent;
+  width: 80px;
+  height: auto;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  border-radius: 25px;
+  position: absolute;
+  left: 50%;
+  top: 60%;
+  margin-left: -71px;
+  border-bottom: 100px solid black;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+}
+/* line 9, ../sass/partials/_clothes.sass */
+.shirt:before {
+  content: "";
+  display: block;
+  background-color: transparent;
+  width: 63px;
+  height: auto;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  border-radius: 15px;
+  position: absolute;
+  left: -28%;
+  top: -7px;
+  border-bottom: 100px solid white;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+}
+/* line 17, ../sass/partials/_clothes.sass */
+.shirt:after {
+  content: "";
+  display: block;
+  background-color: #ffdfc4;
+  width: 40px;
+  height: 50px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 10px;
+  margin-left: -25px;
+  border: 6px solid #8fc1f8;
+}
+
+/* line 26, ../sass/partials/_clothes.sass */
+.shirt.square:after {
+  background-color: #ffdfc4;
+  width: 35px;
+  height: 35px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  top: 0px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* line 31, ../sass/partials/_clothes.sass */
+.skirt {
+  background-color: transparent;
+  width: 120px;
+  height: 110px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  border-radius: 25px;
+  position: absolute;
+  left: 50%;
+  top: -37px;
+  margin-left: -86px;
+  z-index: -1;
+  border-bottom: 75px solid black;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+}
+/* line 39, ../sass/partials/_clothes.sass */
+.skirt:before {
+  content: "";
+  display: block;
+  background-color: transparent;
+  width: 100px;
+  height: 110px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  border-radius: 15px;
+  position: absolute;
+  left: 50%;
+  top: -7px;
+  margin-left: -75px;
+  border-bottom: 75px solid #8fc1f8;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+}
+
+/* line 49, ../sass/partials/_clothes.sass */
+.shorts {
+  background-color: red;
+  width: 120px;
+  height: 60px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  position: absolute;
+  left: 50%;
+  top: 83px;
+  border: 6px solid;
+  margin-left: -60px;
+  z-index: -1;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 56, ../sass/partials/_clothes.sass */
+.shorts:before, .shorts:after {
+  content: "";
+  display: block;
+  background-color: red;
+  width: 59px;
+  height: 25px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  position: absolute;
+  left: -6px;
+  top: 40px;
+  border: 6px solid;
+  border-top: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 66, ../sass/partials/_clothes.sass */
+.shorts:after {
+  left: 55px;
+}
+
+/* line 72, ../sass/partials/_clothes.sass */
+.leg.slipper:before, .leg.slipper:after {
+  content: " ";
+  background-color: transparent;
+  width: 44px;
+  height: 25px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 90%;
+  border-top: 5px solid black;
+  margin-left: -22px;
+  position: absolute;
+  bottom: 0;
+  display: block;
+  z-index: 1;
+}
+
+/* line 86, ../sass/partials/_clothes.sass */
+.leg.shoe {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0px -10px 0 0px white, inset 0px -14px 0 0px #8fc1f8, inset 0px -18px 0 0px white, inset 0px -25px 0 0px black;
+  -moz-box-shadow: inset 0px -10px 0 0px white, inset 0px -14px 0 0px #8fc1f8, inset 0px -18px 0 0px white, inset 0px -25px 0 0px black;
+  box-shadow: inset 0px -10px 0 0px white, inset 0px -14px 0 0px #8fc1f8, inset 0px -18px 0 0px white, inset 0px -25px 0 0px black;
+}
+
+/* line 3, ../sass/partials/_bunny.sass */
+.animal-ear.bunny {
+  background-color: pink;
+  width: 33.33333%;
+  height: 83.33333%;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+  border-radius: 100px;
+  left: 10%;
+  top: -33.33333%;
+  -webkit-transform-origin: 50% 100% 0 50%;
+  -moz-transform-origin: 50% 100% 0 50%;
+  -ms-transform-origin: 50% 100% 0 50%;
+  -o-transform-origin: 50% 100% 0 50%;
+  transform-origin: 50% 100% 0 50%;
+  -webkit-transform: rotate(-5deg);
+  -moz-transform: rotate(-5deg);
+  -ms-transform: rotate(-5deg);
+  -o-transform: rotate(-5deg);
+  transform: rotate(-5deg);
+  -webkit-backface-visibility: visible;
+  -moz-backface-visibility: visible;
+  -ms-backface-visibility: visible;
+  -o-backface-visibility: visible;
+  backface-visibility: visible;
+  -webkit-box-shadow: inset 0px 0px 0px 6px black, inset 0px 0px 0px 30px white, inset 0px 0px 0px 33px #bb8891;
+  -moz-box-shadow: inset 0px 0px 0px 6px black, inset 0px 0px 0px 30px white, inset 0px 0px 0px 33px #bb8891;
+  box-shadow: inset 0px 0px 0px 6px black, inset 0px 0px 0px 30px white, inset 0px 0px 0px 33px #bb8891;
+}
+
+/* line 12, ../sass/partials/_bunny.sass */
+.animal-ear.bunny.right {
+  left: auto;
+  right: 10%;
+  -webkit-transform: rotate(5deg);
+  -moz-transform: rotate(5deg);
+  -ms-transform: rotate(5deg);
+  -o-transform: rotate(5deg);
+  transform: rotate(5deg);
+}
+
+/* line 17, ../sass/partials/_bunny.sass */
+.animal-eye-socket.bunny {
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  width: 16.66667%;
+  height: 16.66667%;
+  background-color: transparent;
+  left: 10%;
+  top: 30%;
+}
+
+/* line 25, ../sass/partials/_bunny.sass */
+.animal-eye-socket.bunny.right {
+  left: 70%;
+}
+
+/* line 28, ../sass/partials/_bunny.sass */
+.animal-eye-ball.bunny {
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  background-color: black;
+}
+
+/* line 32, ../sass/partials/_bunny.sass */
+.animal-eye-pupil.bunny {
+  background-color: white;
+  width: 8px;
+  height: 8px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  margin-left: -4px;
+}
+/* line 36, ../sass/partials/_bunny.sass */
+.animal-eye-pupil.bunny:before {
+  position: absolute;
+  left: 7px;
+  top: -5px;
+}
+
+/* line 39, ../sass/partials/_bunny.sass */
+.animal-nose.bunny {
+  top: 40%;
+  margin-left: -30px;
+}
+
+/* line 44, ../sass/partials/_bunny.sass */
+.animal-mouth.bunny {
+  background-color: white;
+  width: 80px;
+  height: 55px;
+  left: 50%;
+  top: 38%;
+  margin-left: -40px;
+  -webkit-box-shadow: 0px 10px 0px 0px black;
+  -moz-box-shadow: 0px 10px 0px 0px black;
+  box-shadow: 0px 10px 0px 0px black;
+  z-index: 1;
+}
+
+/* line 56, ../sass/partials/_bunny.sass */
+.arm.animal-arm.bunny {
+  background-color: white;
+}
+
+/* line 61, ../sass/partials/_bunny.sass */
+.leg.animal-leg.bunny {
+  background-color: white;
+}
+
+/* line 71, ../sass/partials/_bunny.sass */
+.animal-head-bg.bunny {
+  background-color: white;
+}
+
+/* line 76, ../sass/partials/_bunny.sass */
+.animal-head .animal-eye-socket.bunny {
+  top: 50%;
+}
+/* line 78, ../sass/partials/_bunny.sass */
+.animal-head .animal-nose.bunny {
+  top: 60%;
+}
+/* line 80, ../sass/partials/_bunny.sass */
+.animal-head .animal-mouth.bunny {
+  top: 58%;
+}
+
+/* line 3, ../sass/partials/_cat.sass */
+.animal-ear.cat {
+  background-color: #a7cefa;
+  -webkit-border-radius: 50% 50% 50% 5px;
+  -moz-border-radius: 50% 50% 50% 5px;
+  -ms-border-radius: 50% 50% 50% 5px;
+  -o-border-radius: 50% 50% 50% 5px;
+  border-radius: 50% 50% 50% 5px;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  -webkit-box-shadow: 0px 0px 0px 6px black, inset 0px 0px 0px 20px #8fc1f8;
+  -moz-box-shadow: 0px 0px 0px 6px black, inset 0px 0px 0px 20px #8fc1f8;
+  box-shadow: 0px 0px 0px 6px black, inset 0px 0px 0px 20px #8fc1f8;
+}
+
+/* line 10, ../sass/partials/_cat.sass */
+.animal-ear.cat.right {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+  position: absolute;
+  left: auto;
+  top: 0%;
+  right: 0;
+}
+
+/* line 16, ../sass/partials/_cat.sass */
+.animal-bg.cat:after {
+  -webkit-box-shadow: inset 0px 170px 0px #8fc1f8, inset 0px 180px 0px black;
+  -moz-box-shadow: inset 0px 170px 0px #8fc1f8, inset 0px 180px 0px black;
+  box-shadow: inset 0px 170px 0px #8fc1f8, inset 0px 180px 0px black;
+}
+
+/* line 19, ../sass/partials/_cat.sass */
+.animal-eye-socket.cat {
+  background-color: black;
+  width: 60px;
+  height: 45px;
+  -webkit-border-radius: 50% 50px;
+  -moz-border-radius: 50% 50px;
+  -ms-border-radius: 50% 50px;
+  -o-border-radius: 50% 50px;
+  border-radius: 50% 50px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  top: 100px;
+}
+
+/* line 25, ../sass/partials/_cat.sass */
+.animal-eye-socket.cat.right {
+  -webkit-border-radius: 50px 50%;
+  -moz-border-radius: 50px 50%;
+  -ms-border-radius: 50px 50%;
+  -o-border-radius: 50px 50%;
+  border-radius: 50px 50%;
+}
+
+/* line 29, ../sass/partials/_cat.sass */
+.animal-eye-ball.cat {
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  background-color: #ebff00;
+  height: 45px;
+  width: 50px;
+  margin-left: -25px;
+  overflow: hidden;
+  -webkit-box-shadow: inset 0 0 0 2px #8d9900;
+  -moz-box-shadow: inset 0 0 0 2px #8d9900;
+  box-shadow: inset 0 0 0 2px #8d9900;
+}
+
+/* line 38, ../sass/partials/_cat.sass */
+.animal-eye-pupil.cat {
+  background-color: black;
+  width: 18px;
+  height: 44px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  position: absolute;
+  left: 60%;
+  top: -5px;
+  margin-left: -9px;
+  -webkit-box-shadow: inset 0px 0px 0px 5px #929b2f;
+  -moz-box-shadow: inset 0px 0px 0px 5px #929b2f;
+  box-shadow: inset 0px 0px 0px 5px #929b2f;
+}
+
+/* line 44, ../sass/partials/_cat.sass */
+.animal-nose.cat {
+  margin-left: -25px;
+}
+
+/* line 48, ../sass/partials/_cat.sass */
+.animal-mouth.cat {
+  background-color: transparent;
+  width: 24px;
+  height: 24px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  position: absolute;
+  left: 50%;
+  top: 145px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  margin-left: -11px;
+  border-top: 8px solid black;
+  border-left: 8px solid black;
+}
+
+/* line 59, ../sass/partials/_cat.sass */
+.arm.animal-arm.cat,
+.leg.animal-leg.cat {
+  background-color: #8fc1f8;
+}
+
+/* line 67, ../sass/partials/_cat.sass */
+.torso.animal-torso.cat:before {
+  background-color: #8fc1f8;
+}
+
+/* line 74, ../sass/partials/_cat.sass */
+.tail {
+  background-color: transparent;
+  width: 160px;
+  height: 100px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  position: absolute;
+  left: 0px;
+  top: 30px;
+  -webkit-transform: rotate(60deg);
+  -moz-transform: rotate(60deg);
+  -ms-transform: rotate(60deg);
+  -o-transform: rotate(60deg);
+  transform: rotate(60deg);
+  border-top: 2px solid transparent;
+  border-right: 50px solid black;
+  border-bottom: 25px solid black;
+  border-left: 0;
+  z-index: -10;
+}
+/* line 80, ../sass/partials/_cat.sass */
+.tail:after {
+  content: "";
+  display: block;
+  background-color: transparent;
+  width: 160px;
+  height: 105px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  position: absolute;
+  left: 8px;
+  top: 0px;
+  border-top: 2px solid transparent;
+  border-right: 35px solid #8fc1f8;
+  border-bottom: 12px solid #8fc1f8;
+  border-left: 0;
+}
+
+/* line 89, ../sass/partials/_cat.sass */
+.animal-head-bg.cat {
+  background-color: #8fc1f8;
+}
+
+/* line 94, ../sass/partials/_cat.sass */
+.animal-head .animal-eye-socket.cat {
+  top: 50%;
+}
+/* line 96, ../sass/partials/_cat.sass */
+.animal-head .animal-nose.cat {
+  top: 60%;
+}
+/* line 98, ../sass/partials/_cat.sass */
+.animal-head .animal-mouth.cat {
+  top: 74%;
+}
+
+/* line 3, ../sass/partials/_pig.sass */
+.animal-ear.pig {
+  background-color: #ffdae0;
+  -webkit-border-radius: 50% 50% 50% 5px;
+  -moz-border-radius: 50% 50% 50% 5px;
+  -ms-border-radius: 50% 50% 50% 5px;
+  -o-border-radius: 50% 50% 50% 5px;
+  border-radius: 50% 50% 50% 5px;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  -webkit-box-shadow: 0px 0px 0px 6px black, inset 0px 0px 0px 20px pink;
+  -moz-box-shadow: 0px 0px 0px 6px black, inset 0px 0px 0px 20px pink;
+  box-shadow: 0px 0px 0px 6px black, inset 0px 0px 0px 20px pink;
+}
+
+/* line 10, ../sass/partials/_pig.sass */
+.animal-ear.pig.right {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+  position: absolute;
+  left: 50%;
+  top: 0%;
+}
+
+/* line 14, ../sass/partials/_pig.sass */
+.animal-bg.pig:after {
+  -webkit-box-shadow: inset 0px 170px 0px pink, inset 0px 180px 0px black;
+  -moz-box-shadow: inset 0px 170px 0px pink, inset 0px 180px 0px black;
+  box-shadow: inset 0px 170px 0px pink, inset 0px 180px 0px black;
+}
+
+/* line 17, ../sass/partials/_pig.sass */
+.animal-eye-socket.pig {
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  background-color: transparent;
+  left: 42px;
+  top: 25px;
+}
+
+/* line 23, ../sass/partials/_pig.sass */
+.animal-eye-socket.pig.right {
+  left: 225px;
+}
+
+/* line 26, ../sass/partials/_pig.sass */
+.animal-eye-ball.pig {
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  position: absolute;
+  left: 40%;
+  top: 45px;
+  background-color: black;
+  width: 25px;
+  height: 25PX;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  margin-left: -20px;
+}
+
+/* line 32, ../sass/partials/_pig.sass */
+.animal-eye-pupil.pig {
+  position: absolute;
+  left: 15px;
+  top: 10px;
+  background-color: white;
+  width: 10px;
+  height: 10px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+}
+
+/* line 37, ../sass/partials/_pig.sass */
+.animal-eye-pupil.pig:before {
+  content: " ";
+  display: block;
+  background-color: white;
+  width: 5px;
+  height: 5px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  left: 6px;
+  top: -4px;
+}
+
+/* line 44, ../sass/partials/_pig.sass */
+.animal-nose.pig {
+  background-color: #ff8da1;
+  width: 28.33333%;
+  height: 23.33333%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  top: 60px;
+  z-index: 2;
+  margin-left: -14.16667%;
+  border: 1px solid #ff738c;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 51, ../sass/partials/_pig.sass */
+.animal-nose.pig:before, .animal-nose.pig:after {
+  content: "";
+  display: block;
+  background-color: #050505;
+  width: 10px;
+  height: 30px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+/* line 57, ../sass/partials/_pig.sass */
+.animal-nose.pig:after {
+  left: 55px;
+}
+
+/* line 60, ../sass/partials/_pig.sass */
+.animal-mouth.pig {
+  background-color: transparent;
+  width: 120px;
+  height: 30px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 120px;
+  margin-left: -60px;
+  -webkit-box-shadow: 0px 10px 0px -5px black;
+  -moz-box-shadow: 0px 10px 0px -5px black;
+  box-shadow: 0px 10px 0px -5px black;
+}
+/* line 65, ../sass/partials/_pig.sass */
+.animal-mouth.pig:before, .animal-mouth.pig:after {
+  content: "";
+  background-color: pink;
+  width: 70px;
+  height: 55px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  position: absolute;
+  left: -70px;
+  top: -33px;
+  display: block;
+  -webkit-box-shadow: inset pink 0px -5px 0px 10px, 0px -7px 0px -3px #bd8e96;
+  -moz-box-shadow: inset pink 0px -5px 0px 10px, 0px -7px 0px -3px #bd8e96;
+  box-shadow: inset pink 0px -5px 0px 10px, 0px -7px 0px -3px #bd8e96;
+}
+/* line 72, ../sass/partials/_pig.sass */
+.animal-mouth.pig:after {
+  left: 115px;
+}
+
+/* line 77, ../sass/partials/_pig.sass */
+.arm.animal-arm.pig,
+.leg.animal-leg.pig {
+  background-color: pink;
+}
+
+/* line 82, ../sass/partials/_pig.sass */
+.torso.animal-torso.pig {
+  background-color: pink;
+}
+/* line 85, ../sass/partials/_pig.sass */
+.torso.animal-torso.pig:before {
+  background-color: pink;
+}
+
+/* line 90, ../sass/partials/_pig.sass */
+.tail.pig {
+  background-color: transparent;
+  width: 160px;
+  height: 100px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  position: absolute;
+  left: 0px;
+  top: 30px;
+  -webkit-transform: rotate(60deg);
+  -moz-transform: rotate(60deg);
+  -ms-transform: rotate(60deg);
+  -o-transform: rotate(60deg);
+  transform: rotate(60deg);
+  border-top: 2px solid transparent;
+  border-right: 20px solid black;
+  border-bottom: 5px solid black;
+  border-left: 0;
+  z-index: -10;
+}
+/* line 96, ../sass/partials/_pig.sass */
+.tail.pig:after {
+  content: "";
+  display: block;
+  background-color: transparent;
+  width: 162px;
+  height: 100px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  position: absolute;
+  left: 3px;
+  top: 0px;
+  border-top: 2px solid transparent;
+  border-right: 10px solid pink;
+  border-bottom: 2px solid pink;
+  border-left: 0;
+}
+
+/* line 105, ../sass/partials/_pig.sass */
+.animal-head-bg.pig {
+  background-color: pink;
+}
+
+/* line 110, ../sass/partials/_pig.sass */
+.animal-head .animal-eye-socket.pig {
+  top: 30%;
+}
+/* line 112, ../sass/partials/_pig.sass */
+.animal-head .animal-nose.pig {
+  top: 50%;
+}
+/* line 114, ../sass/partials/_pig.sass */
+.animal-head .animal-mouth.pig {
+  top: 67%;
+}
+/* line 116, ../sass/partials/_pig.sass */
+.animal-head .animal-mouth.pig:before, .animal-head .animal-mouth.pig:after {
+  top: -55px;
+}
+
+/* line 6, ../sass/partials/_panda.sass */
+.hat.panda-hat {
+  -webkit-transform: rotate(-5deg);
+  -moz-transform: rotate(-5deg);
+  -ms-transform: rotate(-5deg);
+  -o-transform: rotate(-5deg);
+  transform: rotate(-5deg);
+}
+
+/* line 16, ../sass/partials/_panda.sass */
+.animal-head-bg.panda {
+  background-color: white;
+}
+
+/* line 21, ../sass/partials/_panda.sass */
+.animal-head .animal-eye-socket.panda {
+  top: 40%;
+}
+/* line 23, ../sass/partials/_panda.sass */
+.animal-head .animal-nose.panda {
+  top: 60%;
+}
+/* line 25, ../sass/partials/_panda.sass */
+.animal-head .animal-mouth.panda {
+  top: 67%;
+}
